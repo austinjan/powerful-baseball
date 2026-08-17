@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PlayerExplorer } from "./PlayerExplorer";
+import { RegionRanking } from "./RegionRanking";
 import { players } from "./data";
 
 export const dynamic = "force-static";
@@ -42,6 +43,8 @@ export default function ReincarnatedPlayersPage() {
           <a href="https://sp.baseball.findfriends.jp/player/19550002/" target="_blank" rel="noreferrer">江川出生資料 ↗</a>
         </div>
       </aside>
+
+      <RegionRanking />
 
       <PlayerExplorer />
 
