@@ -20,24 +20,24 @@ type PositionFilter = "all" | Ability["position"];
 type RatingFilter = "all" | Ability["rating"];
 
 const kindLabels: Record<KindFilter, string> = {
-  all: "すべて",
+  all: "全部",
   gold: "金特",
-  blue: "青特",
+  blue: "青特（藍特）",
 };
 
 const positionLabels: Record<PositionFilter, string> = {
-  all: "全ポジション",
+  all: "全部守位",
   pitcher: "投手",
   catcher: "捕手",
   fielder: "野手",
 };
 
 const ratingLabels: Record<RatingFilter, string> = {
-  all: "すべての評価",
-  S: "S 最優先",
-  A: "A 強力",
-  B: "B 条件次第",
-  C: "C 限定的",
+  all: "全部評價",
+  S: "S 必爭",
+  A: "A 強",
+  B: "B 情境",
+  C: "C 有限",
 };
 
 function ToggleGroup<T extends string>({
@@ -99,9 +99,9 @@ export default function AbilityExplorer() {
 
   return (
     <>
-      <section className="ability-toolbar" aria-label="特殊能力を絞り込む">
+      <section className="ability-toolbar" aria-label="能力篩選">
         <label className="ability-search">
-          <span>日本語名・中文参考・効果を検索</span>
+          <span>搜尋中文、日文或效果</span>
           <input
             type="search"
             value={query}
@@ -111,19 +111,19 @@ export default function AbilityExplorer() {
         </label>
 
         <div className="filter-grid">
-          <ToggleGroup label="種類" options={kindLabels} value={kind} onChange={setKind} />
-          <ToggleGroup label="ポジション" options={positionLabels} value={position} onChange={setPosition} />
-          <ToggleGroup label="実用度" options={ratingLabels} value={rating} onChange={setRating} />
+          <ToggleGroup label="類型" options={kindLabels} value={kind} onChange={setKind} />
+          <ToggleGroup label="守位" options={positionLabels} value={position} onChange={setPosition} />
+          <ToggleGroup label="實用度" options={ratingLabels} value={rating} onChange={setRating} />
         </div>
       </section>
 
       <div className="results-line" aria-live="polite">
-        <p><strong>{results.length}</strong> / {abilities.length} 能力</p>
-        <button type="button" onClick={clearFilters}>絞り込みを解除</button>
+        <p><strong>{results.length}</strong> / {abilities.length} 個能力</p>
+        <button type="button" onClick={clearFilters}>清除篩選</button>
       </div>
 
       {results.length > 0 ? (
-        <section className="ability-grid" aria-label="特殊能力の検索結果">
+        <section className="ability-grid" aria-label="特殊能力結果">
           {results.map((ability) => (
             <article className={`ability-card ability-${ability.kind}`} key={`${ability.kind}-${ability.ja}`}>
               <div className="ability-card-top">
@@ -133,27 +133,27 @@ export default function AbilityExplorer() {
                   </span>
                   <span className="position-badge">{positionLabels[ability.position]}</span>
                 </div>
-                <span className={`rating-badge rating-${ability.rating}`} aria-label={`実用度 ${ability.rating}`}>
+                <span className={`rating-badge rating-${ability.rating}`} aria-label={`實用度 ${ability.rating}`}>
                   {ability.rating}
                 </span>
               </div>
 
               <h2 lang="ja">{ability.ja}</h2>
-              <p className="ability-zh" lang="zh-Hant">中文參考｜{ability.zh}</p>
+              <p className="ability-zh" lang="zh-Hant">{ability.zh}</p>
 
               <div className="ability-detail">
-                <h3>実際の効果 <small>中文参考</small></h3>
+                <h3>實際影響</h3>
                 <p lang="zh-Hant">{ability.effect}</p>
               </div>
               <div className="ability-detail ability-verdict">
                 <h3>{ratingLabels[ability.rating]}</h3>
-                <p lang="zh-Hant"><span className="inline-zh-label">中文參考</span>{ability.reason}</p>
+                <p lang="zh-Hant">{ability.reason}</p>
               </div>
 
-              <div className="ability-sources" aria-label="情報源">
+              <div className="ability-sources" aria-label="資料來源">
                 {ability.sources.map((source, index) => (
                   <a href={source} target="_blank" rel="noreferrer" key={source}>
-                    {index === 0 ? "効果の情報源" : "評価の情報源"} ↗
+                    {index === 0 ? "效果來源" : "評價來源"} ↗
                   </a>
                 ))}
               </div>
@@ -163,10 +163,9 @@ export default function AbilityExplorer() {
       ) : (
         <section className="empty-state">
           <p className="eyebrow">NO MATCH</p>
-          <h2 lang="ja">該当する能力がありません</h2>
-          <p lang="ja">検索語を短くするか、絞り込み条件を一つ解除してください。</p>
-          <p className="zh-reference" lang="zh-Hant">中文參考｜縮短關鍵字或清除篩選條件。</p>
-          <button type="button" onClick={clearFilters}>158能力をすべて表示</button>
+          <h2>沒有符合的能力</h2>
+          <p>試著縮短關鍵字，或清除一個篩選條件。</p>
+          <button type="button" onClick={clearFilters}>顯示全部 158 個</button>
         </section>
       )}
     </>

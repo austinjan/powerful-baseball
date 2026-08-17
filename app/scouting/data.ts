@@ -80,14 +80,14 @@ export const categoryLabels: Record<Category, string> = {
   投手: "投手",
   野手: "野手",
   捕手: "捕手",
-  打擊: "打撃",
+  打擊: "打撃（打擊）",
   守備: "守備",
 };
 
 export const importanceLabels = {
-  5: "最優先",
+  5: "必搶",
   4: "高",
-  3: "実用",
-  2: "条件次第",
+  3: "實用",
+  2: "情境",
   1: "低",
 } as const;
