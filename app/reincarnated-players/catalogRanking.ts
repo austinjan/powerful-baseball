@@ -12,10 +12,16 @@ function canonicalPlayerName(name: string) {
   return name.replace(/（DLC）$/, "");
 }
 
-export function rankCatalogRegions(items: readonly CatalogPlayer[]): CatalogRegionRanking[] {
+export function rankCatalogRegions(
+  items: readonly CatalogPlayer[],
+  regionFor: (player: CatalogPlayer) => string | null = (player) => player[2],
+): CatalogRegionRanking[] {
   const regions = new Map<string, { names: Set<string>; recordCount: number; dlcCount: number }>();
 
-  for (const [name, , region, , , dlc] of items) {
+  for (const player of items) {
+    const [name, , , , , dlc] = player;
+    const region = regionFor(player);
+    if (region === null) continue;
     const current = regions.get(region) ?? { names: new Set<string>(), recordCount: 0, dlcCount: 0 };
     current.names.add(canonicalPlayerName(name));
     current.recordCount += 1;

@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { catalogPlayers } from "./catalog.ts";
 import { filterCatalog, getRecommendationLevel } from "./catalogFilter.ts";
+import { getScoutRegion, scoutRegions } from "./scoutRegions.ts";
 
 const allFilters = {
   query: "",
@@ -15,8 +16,19 @@ const allFilters = {
 
 test("catalog snapshot includes every position and all 47 regions", () => {
   assert.equal(catalogPlayers.length, 1253);
-  assert.equal(new Set(catalogPlayers.map((player) => player[2])).size, 47);
+  assert.equal(Object.keys(scoutRegions).length, 1241);
+  assert.equal(catalogPlayers.filter(([name]) => getScoutRegion(name) !== null).length, 1241);
+  assert.equal(catalogPlayers.filter(([name]) => getScoutRegion(name) === null).length, 12);
+  assert.equal(new Set(Object.values(scoutRegions)).size, 47);
   assert.deepEqual(new Set(catalogPlayers.map((player) => player[3])), new Set(["投手", "捕手", "一壘手", "二壘手", "三壘手", "游擊手", "外野手"]));
+});
+
+test("filters by Scout region instead of high-school opening region", () => {
+  const inHyogo = filterCatalog(catalogPlayers, { ...allFilters, query: "田中将大", region: "兵庫" }, "star");
+  const inHokkaido = filterCatalog(catalogPlayers, { ...allFilters, query: "田中将大", region: "北海道" }, "star");
+
+  assert.ok(inHyogo.some((player) => player[0] === "田中将大（DLC）" && player[2] === "北海道"));
+  assert.equal(inHokkaido.length, 0);
 });
 
 test("filters the full catalog by name, region, position and DLC", () => {

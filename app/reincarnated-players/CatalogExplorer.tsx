@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { catalogPlayers, type CatalogPosition } from "./catalog";
 import { filterCatalog, getRecommendationLevel, type CatalogSort, type RecommendationLevel } from "./catalogFilter";
+import { getScoutRegion, getScoutRegionSource, scoutRegions } from "./scoutRegions";
 
 const PAGE_SIZE = 100;
 const positions: CatalogPosition[] = ["投手", "捕手", "一壘手", "二壘手", "三壘手", "游擊手", "外野手"];
@@ -15,7 +16,7 @@ const positionLabels: Record<CatalogPosition, string> = {
   游擊手: "游擊手（遊撃手）",
   外野手: "外野手（外野手）",
 };
-const regions = [...new Set(catalogPlayers.map((player) => player[2]))].sort((a, b) => a.localeCompare(b, "ja"));
+const regions = [...new Set(Object.values(scoutRegions))].sort((a, b) => a.localeCompare(b, "ja"));
 const recommendationLabels: Record<RecommendationLevel, string> = {
   必拿: "必拿（最優先）",
   強烈推薦: "強烈推薦（非常におすすめ）",
@@ -73,7 +74,7 @@ export function CatalogExplorer() {
           <p className="eyebrow">COMPLETE CATALOG · 2026-07-06 SOURCE REVISION</p>
           <h2 id="catalog-title">轉生選手完整名錄（転生選手一覧）</h2>
         </div>
-        <p>收錄 Game8 2026–2027 搜尋工具目前可顯示的日本國內轉生選手（転生選手）紀錄。地域是開局時依出身高中判定的地域；不是轉生球探（転生スカウト）的 Scout 地點。</p>
+        <p>收錄日本國內轉生選手（転生選手）紀錄。篩選使用轉生球探（転生スカウト）的 Scout 地域；高校所在地／開局地域另行顯示，兩者不一定相同。</p>
       </div>
 
       <div className="catalog-toolbar">
@@ -82,7 +83,7 @@ export function CatalogExplorer() {
           <input type="search" value={query} placeholder="例：落合、1989、広島…" onChange={(event) => setQuery(event.target.value)} />
         </label>
         <div className="catalog-selects">
-          <label><span>開局地域（開始地域）</span><select value={region} onChange={(event) => setRegion(event.target.value)}><option value="全部">全部地域</option>{regions.map((item) => <option value={item} key={item}>{item}</option>)}</select></label>
+          <label><span>Scout 地域（スカウト地域）</span><select value={region} onChange={(event) => setRegion(event.target.value)}><option value="全部">全部 Scout 地域</option>{regions.map((item) => <option value={item} key={item}>{item}</option>)}</select></label>
           <label><span>DLC 狀態</span><select value={dlc} onChange={(event) => setDlc(event.target.value as "全部" | "一般" | "DLC")}><option value="全部">全部版本</option><option value="一般">一般版</option><option value="DLC">DLC 版</option></select></label>
           <label><span>星數下限（以上）</span><input type="number" inputMode="numeric" min="0" max="999" value={minStar} placeholder="例：300" onChange={(event) => setMinStar(event.target.value)} /></label>
           <label><span>星數上限（以下）</span><input type="number" inputMode="numeric" min="0" max="999" value={maxStar} placeholder="不限" onChange={(event) => setMaxStar(event.target.value)} /></label>
@@ -107,17 +108,21 @@ export function CatalogExplorer() {
         <>
           <div className="table-wrap catalog-table-wrap">
             <table className="catalog-table">
-              <thead><tr><th>選手（選手）</th><th>位置（ポジション）</th><th>星數（★）</th><th>推薦指數（おすすめ度）</th><th>轉生年代（年代）</th><th>開局地域（地域）</th><th>版本</th></tr></thead>
+              <thead><tr><th>選手（選手）</th><th>位置（ポジション）</th><th>星數（★）</th><th>推薦指數（おすすめ度）</th><th>轉生年代（年代）</th><th>Scout／高校地域</th><th>版本</th></tr></thead>
               <tbody>
-                {results.slice(0, visibleCount).map(([name, year, itemRegion, itemPosition, star, isDlc]) => {
+                {results.slice(0, visibleCount).map(([name, year, highSchoolRegion, itemPosition, star, isDlc]) => {
                   const recommendationLevel = getRecommendationLevel(star);
+                  const scoutRegion = getScoutRegion(name);
                   return <tr key={name}>
                     <td className="jp-cell" data-label="選手" lang="ja">{name}</td>
                     <td data-label="位置">{positionLabels[itemPosition]}</td>
                     <td data-label="星數"><strong>{star}</strong></td>
                     <td data-label="推薦指數"><span className={`catalog-recommendation catalog-recommendation-${recommendationLevel}`}>{recommendationLabels[recommendationLevel]}</span></td>
                     <td data-label="轉生年代">{year}</td>
-                    <td data-label="開局地域" lang="ja">{itemRegion}</td>
+                    <td data-label="Scout／高校地域" className="catalog-region-cell" lang="ja">
+                      {scoutRegion ? <a href={getScoutRegionSource(name, scoutRegion)} target="_blank" rel="noreferrer">Scout：{scoutRegion} ↗</a> : <strong>Scout：未確認</strong>}
+                      <small>高校／開局：{highSchoolRegion}</small>
+                    </td>
                     <td data-label="版本">{isDlc ? <span className="catalog-dlc">DLC</span> : "一般"}</td>
                   </tr>;
                 })}

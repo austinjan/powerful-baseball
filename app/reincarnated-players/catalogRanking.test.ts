@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { catalogPlayers } from "./catalog.ts";
 import { rankCatalogRegions } from "./catalogRanking.ts";
+import { getScoutRegion } from "./scoutRegions.ts";
 
 test("ranks all 47 regions from the complete domestic catalog", () => {
   const rows = rankCatalogRegions(catalogPlayers);
@@ -37,4 +38,12 @@ test("counts DLC variants separately from unique player names", () => {
     recordCount: 2,
     dlcCount: 1,
   });
+});
+
+test("can rank the complete catalog by Scout region", () => {
+  const rows = rankCatalogRegions(catalogPlayers, ([name]) => getScoutRegion(name));
+
+  assert.equal(rows.length, 47);
+  assert.equal(rows.reduce((sum, row) => sum + row.recordCount, 0), 1241);
+  assert.equal(rows.find((row) => row.region === "兵庫")?.recordCount > 0, true);
 });

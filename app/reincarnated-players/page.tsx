@@ -4,6 +4,7 @@ import { InternationalExplorer } from "./InternationalExplorer";
 import { RegionRanking } from "./RegionRanking";
 import { catalogPlayers } from "./catalog";
 import { worldPlayerCount } from "./worldRoster";
+import { scoutRegions } from "./scoutRegions";
 
 export const dynamic = "force-static";
 
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
 export default function ReincarnatedPlayersPage() {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
   const homeHref = `${basePath}/`;
-  const regionCount = new Set(catalogPlayers.map((player) => player[2])).size;
+  const regionCount = new Set(Object.values(scoutRegions)).size;
 
   return (
     <main className="reincarnated-page">
@@ -28,20 +29,21 @@ export default function ReincarnatedPlayersPage() {
         <div>
           <p className="eyebrow">TOPIC 03 · <span lang="ja">転生選手</span>（轉生選手）</p>
           <h1>找得到，<br /><span>才搶得到。</span></h1>
-          <p>用完整名錄查姓名、年代、開局地域、守備位置與星數，再比較各地域的轉生選手（転生選手）數量。</p>
+          <p>用完整名錄查姓名、年代、Scout 地域、守備位置與星數，再比較各地域的轉生選手（転生選手）數量。</p>
         </div>
         <div className="reincarnated-hero-stats" aria-label="頁面資料摘要">
           <div><strong>{catalogPlayers.length}</strong><span>名錄紀錄</span></div>
           <div><strong>{worldPlayerCount}</strong><span>世界代表</span></div>
-          <div><strong>{regionCount}</strong><span>日本地域</span></div>
+          <div><strong>{regionCount}</strong><span>Scout 地域</span></div>
         </div>
       </header>
 
       <aside className="region-warning">
         <strong>地域要看哪一個？</strong>
-        <p>出生地、出身高中與遊戲判定的出身地不一定相同。本頁完整名錄與地區排行統一使用「開局地域」，也就是年代開始時選擇的都道府縣；不要直接當成轉生球探（転生スカウト）的 Scout 地點。</p>
+        <p>本頁篩選與地區排行使用轉生球探（転生スカウト）的 Scout 地域，也就是選手出身都道府縣。高校所在地／開局地域另行顯示，不會再當作 Scout 地點；兩者不一定相同。</p>
         <div className="region-warning-links">
-          <a href="https://appmedia.jp/pawapuro2026-2027/80080750" target="_blank" rel="noreferrer">AppMedia 規則 ↗</a>
+          <a href="https://www.konami.com/games/2026_support/faq/0/jp/ja/ps5/item?no=202" target="_blank" rel="noreferrer">KONAMI 官方規則 ↗</a>
+          <a href="https://nijiholo5koshien.com/eikan-nain2026-2027-prefecture-list/" target="_blank" rel="noreferrer">47 地域 Scout 名錄 ↗</a>
         </div>
       </aside>
 
@@ -54,11 +56,13 @@ export default function ReincarnatedPlayersPage() {
       <section className="sources reincarnated-sources" aria-labelledby="reincarnated-sources-title">
         <p className="eyebrow">SOURCES · 2026-08-17 核對</p>
         <h2 id="reincarnated-sources-title">資料與評價方式</h2>
-        <p>完整名錄與地區排行的姓名、年代、開局地域、主要守備位置、星數與 DLC 標記取自 Game8 2026–2027 搜尋工具；來源頁最後更新於 2026-07-06。推薦指數（おすすめ度）是本站依星數換算的編輯分級，不是 KONAMI 或 Game8 官方評價。地區排行會合併同地域內同一選手的一般版與 DLC 版，若兩個版本的開局地域不同則分別計入，並另列原始名錄紀錄數。</p>
+        <p>姓名、年代、高校所在地／開局地域、主要守備位置、星數與 DLC 標記取自 Game8 2026–2027 搜尋工具；Scout 地域依 KONAMI 公開規則，使用 2026-07-06 的日文 47 地域 Scout 名錄交叉整理。該名錄是第三方攻略資料，不是 KONAMI 官方逐人表；無法確認的資料會標示「未確認」並排除排行。推薦指數（おすすめ度）是本站依星數換算的編輯分級，不是 KONAMI 或 Game8 官方評價。</p>
         <div className="source-links">
           <a href="https://game8.jp/eikan-nine/553745" target="_blank" rel="noreferrer">Game8：転生OB完整搜尋工具 ↗</a>
           <a href="https://game8.jp/eikan-nine/553748" target="_blank" rel="noreferrer">Game8：投手の転生OB一覧 ↗</a>
           <a href="https://game8.jp/eikan-nine/626986" target="_blank" rel="noreferrer">Game8：外国人OB・転生留学生一覧 ↗</a>
+          <a href="https://www.konami.com/games/2026_support/faq/0/jp/ja/ps5/item?no=202" target="_blank" rel="noreferrer">KONAMI：転生選手出現地域規則 ↗</a>
+          <a href="https://nijiholo5koshien.com/eikan-nain2026-2027-prefecture-list/" target="_blank" rel="noreferrer">バーチャル野球研究所：47 地域 Scout 名錄 ↗</a>
           <a href="https://www.konami.com/pawa/2026-2027/player/wbc" target="_blank" rel="noreferrer">KONAMI：2026 世界代表名單 ↗</a>
         </div>
       </section>

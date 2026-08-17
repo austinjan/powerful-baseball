@@ -1,4 +1,5 @@
 import type { CatalogPlayer, CatalogPosition } from "./catalog.ts";
+import { getScoutRegion } from "./scoutRegions.ts";
 
 export type RecommendationLevel = "必拿" | "強烈推薦" | "推薦" | "一般";
 
@@ -25,11 +26,12 @@ export function filterCatalog(items: readonly CatalogPlayer[], filters: CatalogF
   const needle = filters.query.trim().toLocaleLowerCase("ja");
 
   return items
-    .filter(([name, year, region, position, star, dlc]) => {
-      const searchable = `${name} ${year} ${region} ${position}`.toLocaleLowerCase("ja");
+    .filter(([name, year, highSchoolRegion, position, star, dlc]) => {
+      const scoutRegion = getScoutRegion(name);
+      const searchable = `${name} ${year} ${scoutRegion ?? ""} ${highSchoolRegion} ${position}`.toLocaleLowerCase("ja");
       return (
         (!needle || searchable.includes(needle)) &&
-        (filters.region === "全部" || region === filters.region) &&
+        (filters.region === "全部" || scoutRegion === filters.region) &&
         (filters.position === "全部" || position === filters.position) &&
         (filters.dlc === "全部" || (filters.dlc === "DLC" ? dlc : !dlc)) &&
         (filters.minStar === null || star >= filters.minStar) &&
