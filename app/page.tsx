@@ -7,7 +7,6 @@ export default function Home() {
           <span lang="ja">栄冠ナイン<span lang="zh-Hant">（榮冠九人）</span> · 2026–2027</span>
         </div>
         <p className="eyebrow">POWERFUL BASEBALL FIELD NOTES</p>
-        <h1>每一個決定，<br />都從看懂球員開始。</h1>
         <p className="lede">遊戲名詞以日文為主並附中文，攻略說明使用繁體中文，手機上也能在球探畫面前立刻查。</p>
       </section>
 
