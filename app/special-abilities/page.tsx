@@ -1,29 +1,27 @@
 import type { Metadata } from "next";
-import { headers } from "next/headers";
 import AbilityExplorer from "./AbilityExplorer";
 
-export async function generateMetadata(): Promise<Metadata> {
-  const incoming = await headers();
-  const host = incoming.get("x-forwarded-host") ?? incoming.get("host") ?? "localhost:3001";
-  const protocol = incoming.get("x-forwarded-proto") ?? (host.startsWith("localhost") ? "http" : "https");
-  const image = `${protocol}://${host}/special-abilities-og.png`;
-  const title = "金特・藍特 158 能力速查";
-  const description = "《パワフルプロ野球2026-2027》榮冠九人 67 個金特與 91 個藍特：中日名稱、實際效果、S～C 實用評價與可追溯來源。";
+export const dynamic = "force-static";
 
-  return {
-    title: `${title}｜榮冠作戰室`,
-    description,
-    openGraph: { title, description, images: [{ url: image, width: 1731, height: 909, alt: title }] },
-    twitter: { card: "summary_large_image", title, description, images: [image] },
-  };
-}
+const title = "金特・藍特 158 能力速查";
+const description = "《パワフルプロ野球2026-2027》榮冠九人 67 個金特與 91 個藍特：中日名稱、實際效果、S～C 實用評價與可追溯來源。";
+const image = "https://austinjan.github.io/powerful-baseball/special-abilities-og.png";
+
+export const metadata: Metadata = {
+  title: `${title}｜榮冠作戰室`,
+  description,
+  openGraph: { title, description, images: [{ url: image, width: 1731, height: 909, alt: title }] },
+  twitter: { card: "summary_large_image", title, description, images: [image] },
+};
 
 export default function SpecialAbilitiesPage() {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
   return (
     <main className="abilities-page">
       <header className="abilities-hero">
         <nav className="abilities-nav" aria-label="頁面導覽">
-          <a href="/" className="brand-link"><span className="brand-mark">PB</span> 榮冠作戰室</a>
+          <a href={`${basePath}/`} className="brand-link"><span className="brand-mark">PB</span> 榮冠作戰室</a>
           <a href="#method">判讀方式</a>
         </nav>
         <div className="abilities-hero-copy">

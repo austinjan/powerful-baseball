@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { ScoutTable } from "./ScoutTable";
 
+export const dynamic = "force-static";
+
 export const metadata: Metadata = {
   title: "新生球探寸評速查｜榮冠作戰室",
   description: "新生球探（新入生スカウト）寸評的中日對照、代表能力、推薦度與分類篩選。",
@@ -18,11 +20,13 @@ export const metadata: Metadata = {
 };
 
 export default function ScoutingPage() {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
   return (
     <main className="scouting-page">
       <nav className="detail-nav" aria-label="主導覽">
-        <a href="/" className="brand-link"><span className="brand-mark">PB</span><span>榮冠作戰室</span></a>
-        <a href="/" className="back-link">← 所有主題</a>
+        <a href={`${basePath}/`} className="brand-link"><span className="brand-mark">PB</span><span>榮冠作戰室</span></a>
+        <a href={`${basePath}/`} className="back-link">← 所有主題</a>
       </nav>
 
       <header className="detail-hero">

@@ -1,4 +1,10 @@
+export const dynamic = "force-static";
+
 export default function Home() {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+  const scoutingHref = basePath ? `${basePath}/scouting.html` : "/scouting";
+  const abilitiesHref = basePath ? `${basePath}/special-abilities.html` : "/special-abilities";
+
   return (
     <main>
       <section className="home-hero">
@@ -20,7 +26,7 @@ export default function Home() {
           <span className="topic-count">02 / 持續更新</span>
         </div>
 
-        <a className="topic-card" href="/scouting">
+        <a className="topic-card" href={scoutingHref}>
           <div className="topic-number">01</div>
           <div className="topic-content">
             <div className="topic-tag">新生探索 · 新入生スカウト</div>
@@ -31,7 +37,7 @@ export default function Home() {
           <div className="baseball-seam" aria-hidden="true" />
         </a>
 
-        <a className="topic-card ability-topic-card" href="/special-abilities">
+        <a className="topic-card ability-topic-card" href={abilitiesHref}>
           <div className="topic-number">02</div>
           <div className="topic-content">
             <div className="topic-tag">特殊能力 · 特殊能力</div>
