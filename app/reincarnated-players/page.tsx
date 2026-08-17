@@ -2,19 +2,23 @@ import type { Metadata } from "next";
 import { PlayerExplorer } from "./PlayerExplorer";
 import { players } from "./data";
 
+export const dynamic = "force-static";
+
 export const metadata: Metadata = {
   title: "強力轉生選手（強力な転生選手）｜榮冠作戰室",
   description: "榮冠九人（栄冠ナイン）強力轉生選手的姓名、地域、守備位置與推薦度篩選。",
 };
 
 export default function ReincarnatedPlayersPage() {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+  const homeHref = `${basePath}/`;
   const regionCount = new Set(players.map((player) => player.scoutRegion)).size;
 
   return (
     <main className="reincarnated-page">
       <nav className="detail-nav" aria-label="主導覽">
-        <a href="/" className="brand-link"><span className="brand-mark">PB</span><span>榮冠作戰室</span></a>
-        <a href="/" className="back-link">← 所有主題</a>
+        <a href={homeHref} className="brand-link"><span className="brand-mark">PB</span><span>榮冠作戰室</span></a>
+        <a href={homeHref} className="back-link">← 所有主題</a>
       </nav>
 
       <header className="reincarnated-hero">

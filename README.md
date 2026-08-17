@@ -6,5 +6,5 @@
 
 ## 網站入口
 
-- [榮冠作戰室首頁](https://powerful-baseball-guide.austinjan.chatgpt.site/)
-- [強力轉生選手（強力な転生選手）](https://powerful-baseball-guide.austinjan.chatgpt.site/reincarnated-players)
+- [榮冠作戰室首頁](https://austinjan.github.io/powerful-baseball/)
+- [強力轉生選手（強力な転生選手）](https://austinjan.github.io/powerful-baseball/reincarnated-players.html)

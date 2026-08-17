@@ -6,9 +6,10 @@
     "node": ">=22.13.0"
   },
   "scripts": {
-    "dev": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext dev",
-    "build": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext build",
-    "start": "WRANGLER_LOG_PATH=.wrangler/wrangler.log vinext start",
+    "dev": "vinext dev",
+    "build": "vinext build",
+    "build:pages": "NEXT_PUBLIC_BASE_PATH=/powerful-baseball vinext build && mv dist/client/powerful-baseball/_next dist/client/_next && rmdir dist/client/powerful-baseball && touch dist/client/.nojekyll",
+    "start": "vinext start",
     "test": "node --experimental-strip-types --test app/special-abilities/*.test.ts app/reincarnated-players/*.test.ts"
   },
   "dependencies": {
@@ -16,8 +17,6 @@
     "react-dom": "19.2.6"
   },
   "devDependencies": {
-    "@cloudflare/vite-plugin": "1.37.1",
-    "@openai/sites-vite-plugin": "0.1.0",
     "@types/node": "22.19.19",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
@@ -25,8 +24,7 @@
     "@vitejs/plugin-rsc": "0.5.26",
     "typescript": "5.9.3",
     "vinext": "1.0.0-beta.2",
-    "vite": "8.0.13",
-    "wrangler": "4.92.0"
+    "vite": "8.0.13"
   },
   "type": "module"
 }

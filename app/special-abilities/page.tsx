@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import AbilityExplorer from "./AbilityExplorer";
 
+export const dynamic = "force-static";
+
 const title = "金特・青特（藍特）158 能力速查";
 const description = "《パワフルプロ野球2026-2027》栄冠ナイン（榮冠九人）67 個金特與 91 個青特（藍特）：日中名稱、實際效果、S～C 實用評價與可追溯來源。";
 
@@ -12,11 +14,13 @@ export const metadata: Metadata = {
 };
 
 export default function SpecialAbilitiesPage() {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
   return (
     <main className="abilities-page">
       <header className="abilities-hero">
         <nav className="abilities-nav" aria-label="頁面導覽">
-          <a href="/" className="brand-link"><span className="brand-mark">PB</span> 榮冠作戰室</a>
+          <a href={`${basePath}/`} className="brand-link"><span className="brand-mark">PB</span> 榮冠作戰室</a>
           <a href="#method">判讀方式</a>
         </nav>
         <div className="abilities-hero-copy">

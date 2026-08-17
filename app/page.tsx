@@ -1,13 +1,21 @@
+export const dynamic = "force-static";
+
 export default function Home() {
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+  const homeHref = `${basePath}/`;
+  const scoutingHref = basePath ? `${basePath}/scouting.html` : "/scouting";
+  const abilitiesHref = basePath ? `${basePath}/special-abilities.html` : "/special-abilities";
+  const reincarnatedHref = basePath ? `${basePath}/reincarnated-players.html` : "/reincarnated-players";
+
   return (
     <main>
       <section className="home-hero">
         <nav className="topline" aria-label="主題快速連結">
-          <a className="home-brand" href="/" aria-label="榮冠作戰室首頁">
+          <a className="home-brand" href={homeHref} aria-label="榮冠作戰室首頁">
             <span className="brand-mark">PB</span>
             <span lang="ja">栄冠ナイン<span lang="zh-Hant">（榮冠九人）</span> · 2026–2027</span>
           </a>
-          <a className="home-feature-link" href="/reincarnated-players">
+          <a className="home-feature-link" href={reincarnatedHref}>
             <span lang="ja">強力な転生選手</span><span lang="zh-Hant">（強力轉生選手）</span> <span aria-hidden="true">↗</span>
           </a>
         </nav>
@@ -24,7 +32,7 @@ export default function Home() {
           <span className="topic-count">03 / 持續更新</span>
         </div>
 
-        <a className="topic-card" href="/scouting">
+        <a className="topic-card" href={scoutingHref}>
           <div className="topic-number">01</div>
           <div className="topic-content">
             <div className="topic-tag" lang="ja">新入生スカウト<span lang="zh-Hant">（新生球探）</span></div>
@@ -35,7 +43,7 @@ export default function Home() {
           <div className="baseball-seam" aria-hidden="true" />
         </a>
 
-        <a className="topic-card ability-topic-card" href="/special-abilities">
+        <a className="topic-card ability-topic-card" href={abilitiesHref}>
           <div className="topic-number">02</div>
           <div className="topic-content">
             <div className="topic-tag" lang="ja">特殊能力</div>
@@ -46,7 +54,7 @@ export default function Home() {
           <div className="baseball-seam" aria-hidden="true" />
         </a>
 
-        <a className="topic-card reincarnated-topic-card" href="/reincarnated-players">
+        <a className="topic-card reincarnated-topic-card" href={reincarnatedHref}>
           <div className="topic-number">03</div>
           <div className="topic-content">
             <div className="topic-tag" lang="ja">転生選手<span lang="zh-Hant">（轉生選手）</span></div>
