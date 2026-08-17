@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { ScoutTable } from "./ScoutTable";
 
 export const metadata: Metadata = {
@@ -22,8 +21,8 @@ export default function ScoutingPage() {
   return (
     <main className="scouting-page">
       <nav className="detail-nav" aria-label="主導覽">
-        <Link href="/" className="brand-link"><span className="brand-mark">PB</span><span>榮冠作戰室</span></Link>
-        <Link href="/" className="back-link">← 所有主題</Link>
+        <a href="/" className="brand-link"><span className="brand-mark">PB</span><span>榮冠作戰室</span></a>
+        <a href="/" className="back-link">← 所有主題</a>
       </nav>
 
       <header className="detail-hero">

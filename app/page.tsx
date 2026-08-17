@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function Home() {
   return (
     <main>
@@ -22,7 +20,7 @@ export default function Home() {
           <span className="topic-count">02 / 持續更新</span>
         </div>
 
-        <Link className="topic-card" href="/scouting">
+        <a className="topic-card" href="/scouting">
           <div className="topic-number">01</div>
           <div className="topic-content">
             <div className="topic-tag">新生探索 · 新入生スカウト</div>
@@ -31,9 +29,9 @@ export default function Home() {
             <span className="topic-cta">開始探索 <span aria-hidden="true">↗</span></span>
           </div>
           <div className="baseball-seam" aria-hidden="true" />
-        </Link>
+        </a>
 
-        <Link className="topic-card ability-topic-card" href="/special-abilities">
+        <a className="topic-card ability-topic-card" href="/special-abilities">
           <div className="topic-number">02</div>
           <div className="topic-content">
             <div className="topic-tag">特殊能力 · 特殊能力</div>
@@ -42,7 +40,7 @@ export default function Home() {
             <span className="topic-cta">開啟能力速查 <span aria-hidden="true">↗</span></span>
           </div>
           <div className="baseball-seam" aria-hidden="true" />
-        </Link>
+        </a>
       </section>
 
       <footer>

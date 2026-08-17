@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { headers } from "next/headers";
 import AbilityExplorer from "./AbilityExplorer";
 
@@ -24,7 +23,7 @@ export default function SpecialAbilitiesPage() {
     <main className="abilities-page">
       <header className="abilities-hero">
         <nav className="abilities-nav" aria-label="頁面導覽">
-          <Link href="/" className="brand-link"><span className="brand-mark">PB</span> 榮冠作戰室</Link>
+          <a href="/" className="brand-link"><span className="brand-mark">PB</span> 榮冠作戰室</a>
           <a href="#method">判讀方式</a>
         </nav>
         <div className="abilities-hero-copy">
