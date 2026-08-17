@@ -2,28 +2,53 @@
 
 import { useMemo, useState } from "react";
 import abilityData from "./abilities.json";
+import additionalAbilities from "./additionalAbilities";
 import { abilityMatchesQuery } from "./abilityFilter";
 
 type Ability = {
   zh: string;
   ja: string;
-  kind: "gold" | "blue";
+  kind: "gold" | "blue" | "red" | "mixed" | "grade" | "green";
   position: "pitcher" | "catcher" | "fielder";
   effect: string;
-  rating: "S" | "A" | "B" | "C";
+  rating?: "S" | "A" | "B" | "C";
   reason: string;
   sources: string[];
+  exclusive?: boolean;
 };
 
-const abilities = abilityData as Ability[];
+const gradeAbilities = new Set([
+  "打たれ強さ", "回復", "クイック", "対左打者", "対ピンチ", "ノビ",
+  "キャッチャー", "ケガしにくさ", "送球", "走塁", "対左投手", "チャンス", "盗塁",
+]);
+
+const abilities: Ability[] = [
+  ...(abilityData as Ability[]).map((ability) =>
+    gradeAbilities.has(ability.ja) ? { ...ability, kind: "grade" as const } : ability,
+  ),
+  ...additionalAbilities,
+];
 type KindFilter = "all" | Ability["kind"];
 type PositionFilter = "all" | Ability["position"];
-type RatingFilter = "all" | Ability["rating"];
+type RatingFilter = "all" | "S" | "A" | "B" | "C";
 
 const kindLabels: Record<KindFilter, string> = {
   all: "全部",
   gold: "金特",
   blue: "青特（藍特）",
+  red: "赤特（紅特）",
+  mixed: "青赤特（利弊並存）",
+  grade: "A～G 階級",
+  green: "緑特（綠特）",
+};
+
+const kindShortLabels: Record<Ability["kind"], string> = {
+  gold: "金特",
+  blue: "青特",
+  red: "赤特",
+  mixed: "青赤特",
+  grade: "A～G",
+  green: "緑特",
 };
 
 const positionLabels: Record<PositionFilter, string> = {
@@ -128,13 +153,16 @@ export default function AbilityExplorer() {
               <div className="ability-card-top">
                 <div className="ability-badges">
                   <span className={`kind-badge kind-${ability.kind}`}>
-                    {ability.kind === "gold" ? "金特" : "青特"}
+                    {kindShortLabels[ability.kind]}
                   </span>
                   <span className="position-badge">{positionLabels[ability.position]}</span>
+                  {ability.exclusive ? <span className="exclusive-badge">專屬</span> : null}
                 </div>
-                <span className={`rating-badge rating-${ability.rating}`} aria-label={`實用度 ${ability.rating}`}>
-                  {ability.rating}
-                </span>
+                {ability.rating ? (
+                  <span className={`rating-badge rating-${ability.rating}`} aria-label={`實用度 ${ability.rating}`}>
+                    {ability.rating}
+                  </span>
+                ) : null}
               </div>
 
               <h2 lang="ja">{ability.ja}</h2>
@@ -145,7 +173,7 @@ export default function AbilityExplorer() {
                 <p lang="zh-Hant">{ability.effect}</p>
               </div>
               <div className="ability-detail ability-verdict">
-                <h3>{ratingLabels[ability.rating]}</h3>
+                <h3>{ability.rating ? ratingLabels[ability.rating] : "判讀提示"}</h3>
                 <p lang="zh-Hant">{ability.reason}</p>
               </div>
 
@@ -164,7 +192,7 @@ export default function AbilityExplorer() {
           <p className="eyebrow">NO MATCH</p>
           <h2>沒有符合的能力</h2>
           <p>試著縮短關鍵字，或清除一個篩選條件。</p>
-          <button type="button" onClick={clearFilters}>顯示全部 158 個</button>
+          <button type="button" onClick={clearFilters}>顯示全部 {abilities.length} 個</button>
         </section>
       )}
     </>

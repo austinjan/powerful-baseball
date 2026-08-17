@@ -47,8 +47,8 @@ export default function Home() {
           <div className="topic-number">02</div>
           <div className="topic-content">
             <div className="topic-tag" lang="ja">特殊能力</div>
-            <h3 lang="ja">金特・青特<span lang="zh-Hant">（藍特）</span></h3>
-            <p>158 個標準能力，日中名稱、實際影響與<span lang="ja">栄冠ナイン</span>（榮冠九人）實用評價一次查清楚。</p>
+            <h3><span lang="ja">特殊能力</span><span lang="zh-Hant">（特能）</span></h3>
+            <p>248 個金特、青特、紅特與其他球員特性，日中名稱、實際影響與<span lang="ja">栄冠ナイン</span>（榮冠九人）判讀一次查清楚。</p>
             <span className="topic-cta">開啟能力速查 <span aria-hidden="true">↗</span></span>
           </div>
           <div className="baseball-seam" aria-hidden="true" />

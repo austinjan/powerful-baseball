@@ -1,10 +1,11 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { categoryLabels, importanceLabels, scoutNotes, type Category } from "./data";
+import { categoryLabels, importanceLabels, scoutNotes, type Category, type ScoutNote } from "./data";
 import abilityData from "../special-abilities/abilities.json";
 
 type SortKey = "importance" | "japanese";
+type ImportanceFilter = "全部" | ScoutNote["importance"];
 
 type AbilityReference = {
   ja: string;
@@ -45,6 +46,7 @@ function abilityEffect(note: (typeof scoutNotes)[number]) {
 export function ScoutTable() {
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState<"全部" | Category>("全部");
+  const [importance, setImportance] = useState<ImportanceFilter>("全部");
   const [sortKey, setSortKey] = useState<SortKey>("importance");
   const [ascending, setAscending] = useState(false);
 
@@ -55,7 +57,8 @@ export function ScoutTable() {
         const searchableText = `${note.japanese} ${note.chinese} ${note.ability} ${abilityEffect(note)}`.toLocaleLowerCase("zh-Hant");
         return (
           (!needle || searchableText.includes(needle)) &&
-          (category === "全部" || note.categories.includes(category))
+          (category === "全部" || note.categories.includes(category)) &&
+          (importance === "全部" || note.importance === importance)
         );
       })
       .sort((a, b) => {
@@ -64,7 +67,7 @@ export function ScoutTable() {
           : a.importance - b.importance || a.japanese.localeCompare(b.japanese, "ja");
         return ascending ? result : -result;
       });
-  }, [query, category, sortKey, ascending]);
+  }, [query, category, importance, sortKey, ascending]);
 
   function sortBy(key: SortKey) {
     if (sortKey === key) setAscending((value) => !value);
@@ -96,18 +99,40 @@ export function ScoutTable() {
         />
       </label>
 
-      <div className="filter-bar" aria-label="依分類篩選">
-        {(["全部", ...Object.keys(categoryLabels)] as const).map((item) => (
-          <button
-            className={category === item ? "filter-chip active" : "filter-chip"}
-            key={item}
-            onClick={() => setCategory(item)}
-            type="button"
-            aria-pressed={category === item}
-          >
-            {item === "全部" ? "全部" : categoryLabels[item]}
-          </button>
-        ))}
+      <div className="scout-filters">
+        <fieldset className="scout-filter-group">
+          <legend>分類</legend>
+          <div className="filter-bar" aria-label="依分類篩選">
+            {(["全部", ...Object.keys(categoryLabels)] as const).map((item) => (
+              <button
+                className={category === item ? "filter-chip active" : "filter-chip"}
+                key={item}
+                onClick={() => setCategory(item)}
+                type="button"
+                aria-pressed={category === item}
+              >
+                {item === "全部" ? "全部" : categoryLabels[item]}
+              </button>
+            ))}
+          </div>
+        </fieldset>
+
+        <fieldset className="scout-filter-group">
+          <legend>推薦度</legend>
+          <div className="filter-bar" aria-label="依推薦度篩選">
+            {(["全部", 5, 4, 3, 2, 1] as const).map((item) => (
+              <button
+                className={importance === item ? "filter-chip active" : "filter-chip"}
+                key={item}
+                onClick={() => setImportance(item)}
+                type="button"
+                aria-pressed={importance === item}
+              >
+                {item === "全部" ? "全部" : `${item} ${importanceLabels[item]}`}
+              </button>
+            ))}
+          </div>
+        </fieldset>
       </div>
 
       <div className="mobile-sort" aria-label="排序方式">
