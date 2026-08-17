@@ -4,29 +4,32 @@ export default function Home() {
       <section className="home-hero">
         <div className="topline">
           <span className="brand-mark">PB</span>
-          <span>榮冠九人 · 2026–2027</span>
+          <span>栄冠ナイン · 2026–2027</span>
         </div>
         <p className="eyebrow">POWERFUL BASEBALL FIELD NOTES</p>
-        <h1>每一個決定，<br />都從看懂球員開始。</h1>
-        <p className="lede">中日對照、快速判讀、手機上也能在球探畫面前立刻查。</p>
+        <h1 lang="ja">選手を知れば、<br />すべての判断が変わる。</h1>
+        <p className="lede" lang="ja">日本語を中心に、繁体字中国語を参考併記。スカウト画面を見ながらスマートフォンですぐ確認できます。</p>
+        <p className="zh-reference hero-zh" lang="zh-Hant">中文參考｜看懂球員，才能做出每一個正確決定。</p>
       </section>
 
       <section className="topic-section" aria-labelledby="topics-title">
         <div className="section-heading">
           <div>
             <p className="eyebrow">EXPLORE TOPICS</p>
-            <h2 id="topics-title">主題探索</h2>
+            <h2 id="topics-title" lang="ja">テーマを探す</h2>
+            <p className="zh-reference" lang="zh-Hant">中文參考｜主題探索</p>
           </div>
-          <span className="topic-count">02 / 持續更新</span>
+          <span className="topic-count">02 / 随時更新</span>
         </div>
 
         <a className="topic-card" href="/scouting">
           <div className="topic-number">01</div>
           <div className="topic-content">
-            <div className="topic-tag">新生探索 · 新入生スカウト</div>
-            <h3>寸評速查</h3>
-            <p>從日文寸評找到代表能力，依推薦度排序、分類篩選，決定這一趟該把誰帶回來。</p>
-            <span className="topic-cta">開始探索 <span aria-hidden="true">↗</span></span>
+            <div className="topic-tag" lang="ja">新入生スカウト</div>
+            <h3 lang="ja">寸評早見表</h3>
+            <p lang="ja">日本語の寸評から対応する能力を確認。おすすめ度や分類で絞り込み、スカウトする選手を判断できます。</p>
+            <p className="zh-reference" lang="zh-Hant">中文參考｜從日文寸評找到代表能力，依推薦度與分類快速選人。</p>
+            <span className="topic-cta" lang="ja">早見表を開く <span aria-hidden="true">↗</span></span>
           </div>
           <div className="baseball-seam" aria-hidden="true" />
         </a>
@@ -34,10 +37,11 @@ export default function Home() {
         <a className="topic-card ability-topic-card" href="/special-abilities">
           <div className="topic-number">02</div>
           <div className="topic-content">
-            <div className="topic-tag">特殊能力 · 特殊能力</div>
-            <h3>金特・藍特</h3>
-            <p>158 個標準能力，中日名稱、實際影響與榮冠實用評價一次查清楚。</p>
-            <span className="topic-cta">開啟能力速查 <span aria-hidden="true">↗</span></span>
+            <div className="topic-tag" lang="ja">特殊能力</div>
+            <h3 lang="ja">金特・青特</h3>
+            <p lang="ja">標準能力158個を、日本語名・実際の効果・栄冠ナインでの評価から検索できます。</p>
+            <p className="zh-reference" lang="zh-Hant">中文參考｜158 個標準金特與藍特，附實際影響及榮冠評價。</p>
+            <span className="topic-cta" lang="ja">能力早見表を開く <span aria-hidden="true">↗</span></span>
           </div>
           <div className="baseball-seam" aria-hidden="true" />
         </a>
@@ -45,7 +49,7 @@ export default function Home() {
 
       <footer>
         <span>POWERFUL BASEBALL</span>
-        <span>非官方攻略筆記</span>
+        <span lang="ja">非公式攻略ノート · 中文参考付き</span>
       </footer>
     </main>
   );

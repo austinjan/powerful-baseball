@@ -12,7 +12,7 @@ body {
   margin: 0;
   color: var(--ink);
   background: var(--paper);
-  font-family: "Avenir Next", "Noto Sans TC", "PingFang TC", sans-serif;
+  font-family: "Avenir Next", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Noto Sans TC", "PingFang TC", sans-serif;
 }
 a { color: inherit; }
 main { min-height: 100vh; }
@@ -34,6 +34,10 @@ main { min-height: 100vh; }
 .eyebrow { margin: 0 0 16px; color: var(--orange); font: 700 11px/1.2 ui-monospace, monospace; letter-spacing: .16em; }
 .home-hero h1 { max-width: 880px; margin: 0; font-size: clamp(46px, 9vw, 112px); line-height: .92; letter-spacing: -.065em; font-weight: 800; }
 .lede { max-width: 580px; margin: 28px 0 0; color: rgba(255,255,255,.7); font-size: clamp(16px, 2vw, 20px); line-height: 1.7; }
+.zh-reference { margin: 7px 0 0; color: rgba(22,34,23,.56); font-size: 12px; line-height: 1.65; font-weight: 600; }
+.hero-zh { max-width: 580px; color: rgba(255,255,255,.44); }
+.topic-card .zh-reference { max-width: 600px; margin: -20px 0 30px; color: rgba(255,255,255,.68); }
+.ability-topic-card .zh-reference { color: rgba(22,34,23,.58); }
 
 .topic-section { padding: 72px clamp(22px, 7vw, 112px) 96px; }
 .section-heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 30px; }
@@ -68,7 +72,8 @@ footer { padding: 28px clamp(22px, 7vw, 112px); color: rgba(255,255,255,.64); ba
 .abilities-hero-copy { max-width: 1040px; margin-top: auto; }
 .abilities-hero h1 { margin: 0; font-size: clamp(58px, 10vw, 132px); line-height: .84; letter-spacing: -.075em; }
 .abilities-hero h1 span { color: var(--lime); }
-.abilities-hero-copy > p:last-of-type { max-width: 680px; margin: 30px 0 0; color: rgba(255,255,255,.7); font-size: clamp(16px, 2vw, 20px); line-height: 1.75; }
+.abilities-hero-copy > p:not(.eyebrow):not(.zh-reference) { max-width: 680px; margin: 30px 0 0; color: rgba(255,255,255,.7); font-size: clamp(16px, 2vw, 20px); line-height: 1.75; }
+.ability-hero-zh { max-width: 680px; color: rgba(255,255,255,.44); }
 .ability-stats { display: flex; gap: clamp(28px, 6vw, 82px); margin-top: 44px; }
 .ability-stats div { display: flex; align-items: baseline; gap: 9px; }
 .ability-stats strong { color: var(--orange); font: 800 clamp(34px, 5vw, 58px)/1 ui-monospace, monospace; letter-spacing: -.08em; }
@@ -108,10 +113,12 @@ footer { padding: 28px clamp(22px, 7vw, 112px); color: rgba(255,255,255,.64); ba
 .rating-B { background: #346cae; }
 .rating-C { background: #6b7068; }
 .ability-card h2 { margin: 30px 0 2px; font-size: clamp(28px, 3.2vw, 42px); line-height: 1; letter-spacing: -.045em; }
-.ability-ja { margin: 0 0 30px; color: rgba(22,34,23,.58); font: 700 13px ui-monospace, monospace; }
+.ability-zh { margin: 5px 0 30px; color: rgba(22,34,23,.55); font-size: 12px; font-weight: 650; }
 .ability-detail { padding: 17px 0; border-top: 1px solid var(--line); }
 .ability-detail h3 { margin: 0 0 7px; font: 800 10px ui-monospace, monospace; letter-spacing: .12em; }
+.ability-detail h3 small { color: rgba(22,34,23,.48); font-size: 9px; letter-spacing: .05em; }
 .ability-detail p { margin: 0; line-height: 1.65; }
+.inline-zh-label { display: inline-block; margin-right: 8px; padding: 2px 5px; color: rgba(22,34,23,.56); background: #ece6d8; font-size: 9px; font-weight: 800; }
 .ability-verdict h3 { color: var(--orange); }
 .ability-sources { display: flex; flex-wrap: wrap; gap: 16px; padding-top: 18px; border-top: 1px solid var(--line); }
 .ability-sources a { color: rgba(22,34,23,.65); font: 700 11px ui-monospace, monospace; text-underline-offset: 3px; }
@@ -119,6 +126,7 @@ footer { padding: 28px clamp(22px, 7vw, 112px); color: rgba(255,255,255,.64); ba
 .empty-state > p:not(.eyebrow) { margin: 18px 0 24px; }
 .method-note { padding: 86px clamp(20px, 6vw, 92px); color: #fff; background: var(--orange); }
 .method-note > p:not(.eyebrow) { max-width: 760px; margin: 26px 0; font-size: 17px; line-height: 1.75; }
+.method-note .method-zh { color: rgba(255,255,255,.72); font-size: 12px; }
 .method-links { display: flex; flex-wrap: wrap; gap: 24px; }
 
 @media (max-width: 820px) {
@@ -161,6 +169,7 @@ button { font: inherit; }
 .detail-hero h1 { margin: 0; font-size: clamp(64px, 12vw, 150px); line-height: .8; letter-spacing: -.085em; }
 .hero-japanese { margin: 24px 0 0; color: var(--lime); font-weight: 800; letter-spacing: .04em; }
 .hero-summary { max-width: 600px; margin: 34px 0 0; color: rgba(255,255,255,.68); line-height: 1.75; }
+.hero-summary-zh { max-width: 600px; margin-top: 8px; color: rgba(255,255,255,.42); }
 .priority-card { min-height: 300px; padding: 28px; color: var(--ink); background: var(--orange); display: flex; flex-direction: column; justify-content: space-between; }
 .priority-label { font: 800 10px ui-monospace, monospace; letter-spacing: .14em; }
 .priority-card > strong { font-size: clamp(30px, 4vw, 48px); line-height: 1.05; letter-spacing: -.05em; }
@@ -172,6 +181,7 @@ button { font: inherit; }
 .quick-notes strong { color: var(--lime); font: 800 28px ui-monospace, monospace; }
 .quick-notes span { margin-top: 4px; color: rgba(255,255,255,.58); font-size: 12px; }
 .quick-notes p { align-self: center; max-width: 540px; margin: 0 0 0 36px; color: rgba(255,255,255,.6); line-height: 1.65; font-size: 13px; }
+.quick-notes p small { display: block; margin-top: 5px; color: rgba(255,255,255,.38); font-size: 10px; }
 
 .table-panel { padding: 90px clamp(22px, 5vw, 76px) 110px; }
 .table-intro { display: flex; justify-content: space-between; align-items: end; gap: 24px; }
@@ -188,6 +198,8 @@ th { padding: 16px 14px; text-align: left; border-bottom: 1px solid var(--ink); 
 th button { cursor: pointer; border: 0; padding: 0; color: inherit; background: transparent; font-weight: 800; }
 th button span { color: var(--orange); }
 td { padding: 19px 14px; border-bottom: 1px solid var(--line); line-height: 1.5; vertical-align: top; }
+td > small { display: block; margin-top: 4px; color: #697066; font-size: 11px; }
+.zh-cell { color: #596057; font-size: 12px; }
 tbody tr { transition: background .12s ease; }
 tbody tr:hover { background: rgba(216,243,66,.22); }
 .jp-cell { font-weight: 800; }
@@ -203,8 +215,10 @@ tbody tr:hover { background: rgba(216,243,66,.22); }
 .note-copy { align-self: end; max-width: 610px; font-size: 15px; line-height: 1.8; }
 .note-copy p { margin: 0; }
 .note-copy p + p { margin-top: 20px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,.35); }
+.note-copy .zh-reference { color: rgba(255,255,255,.68); font-size: 11px; }
 .sources { padding: 72px clamp(22px, 7vw, 112px) 96px; color: #fff; background: var(--ink); }
 .sources > p:not(.eyebrow) { max-width: 700px; color: rgba(255,255,255,.65); line-height: 1.7; }
+.sources .source-zh { color: rgba(255,255,255,.42); font-size: 11px; }
 .source-links { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 44px; border-top: 1px solid rgba(255,255,255,.25); }
 .source-links a { padding: 22px 10px 22px 0; border-bottom: 1px solid rgba(255,255,255,.25); color: var(--lime); text-underline-offset: 4px; font-size: 13px; }
 
