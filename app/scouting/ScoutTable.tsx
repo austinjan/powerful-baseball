@@ -2,8 +2,45 @@
 
 import { useMemo, useState } from "react";
 import { categoryLabels, importanceLabels, scoutNotes, type Category } from "./data";
+import abilityData from "../special-abilities/abilities.json";
 
 type SortKey = "importance" | "japanese";
+
+type AbilityReference = {
+  ja: string;
+  effect: string;
+};
+
+const abilityReferences = abilityData as AbilityReference[];
+
+function abilityParts(value: string) {
+  const match = value.match(/^(.+?)（(.+?)）$/);
+  if (match) return { japanese: match[2], chinese: match[1] };
+  if (value === "無對應特殊能力") return { japanese: "該当する特殊能力なし", chinese: value };
+  return { japanese: value, chinese: "" };
+}
+
+function abilityEffect(note: (typeof scoutNotes)[number]) {
+  const japanese = abilityParts(note.ability).japanese;
+  const lookupName = japanese.replace(/[A-G]／[A-G]$/, "");
+
+  if (lookupName === "威圧感") {
+    const position = note.categories.includes("投手") ? "投手" : "野手";
+    return abilityReferences.find((ability) => ability.ja === `威圧感・${position}`)?.effect;
+  }
+
+  const referencedEffect = abilityReferences.find((ability) => ability.ja === lookupName)?.effect;
+  if (referencedEffect) return referencedEffect;
+
+  const supplementalEffects: Record<string, string> = {
+    覚醒: "這句寸評表示較容易發生覚醒（覺醒），但不保證一定觸發。",
+    天才肌: "可能是天才肌，入學後才能確認；這句寸評不代表必定是天才肌。",
+    選球眼: "較容易辨識並放過壞球；屬於綠色能力，不在金特・青特表的收錄範圍內。",
+    該当する特殊能力なし: "不直接對應特殊能力，主要反映隊長經驗或練習態度。",
+  };
+
+  return supplementalEffects[lookupName] ?? "目前沒有可對照的效果資料。";
+}
 
 export function ScoutTable() {
   const [query, setQuery] = useState("");
@@ -15,7 +52,7 @@ export function ScoutTable() {
     const needle = query.trim().toLocaleLowerCase("zh-Hant");
     return scoutNotes
       .filter((note) => {
-        const searchableText = `${note.japanese} ${note.chinese} ${note.ability}`.toLocaleLowerCase("zh-Hant");
+        const searchableText = `${note.japanese} ${note.chinese} ${note.ability} ${abilityEffect(note)}`.toLocaleLowerCase("zh-Hant");
         return (
           (!needle || searchableText.includes(needle)) &&
           (category === "全部" || note.categories.includes(category))
@@ -38,13 +75,6 @@ export function ScoutTable() {
   }
 
   const arrow = (key: SortKey) => sortKey === key ? (ascending ? "↑" : "↓") : "↕";
-
-  function abilityParts(value: string) {
-    const match = value.match(/^(.+?)（(.+?)）$/);
-    if (match) return { japanese: match[2], chinese: match[1] };
-    if (value === "無對應特殊能力") return { japanese: "該当する特殊能力なし", chinese: value };
-    return { japanese: value, chinese: "" };
-  }
 
   return (
     <section className="table-panel" aria-labelledby="notes-title">
@@ -105,6 +135,7 @@ export function ScoutTable() {
                 <td data-label="代表能力">
                   <strong lang="ja">{abilityParts(note.ability).japanese}</strong>
                   {abilityParts(note.ability).chinese && <small lang="zh-Hant">{abilityParts(note.ability).chinese}</small>}
+                  <small className="ability-effect"><b>實際效果：</b>{abilityEffect(note)}</small>
                 </td>
                 <td data-label="推薦度">
                   <span className={`rating rating-${note.importance}`}>
