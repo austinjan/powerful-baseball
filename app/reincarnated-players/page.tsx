@@ -1,19 +1,22 @@
 import type { Metadata } from "next";
+import { CatalogExplorer } from "./CatalogExplorer";
+import { InternationalExplorer } from "./InternationalExplorer";
 import { PlayerExplorer } from "./PlayerExplorer";
 import { RegionRanking } from "./RegionRanking";
-import { players } from "./data";
+import { catalogPlayers } from "./catalog";
+import { worldPlayerCount } from "./worldRoster";
 
 export const dynamic = "force-static";
 
 export const metadata: Metadata = {
-  title: "強力轉生選手（強力な転生選手）｜榮冠作戰室",
-  description: "榮冠九人（栄冠ナイン）強力轉生選手的姓名、地域、守備位置與推薦度篩選。",
+  title: "轉生選手完整名錄（転生選手一覧）｜榮冠作戰室",
+  description: "榮冠九人（栄冠ナイン）日本國內轉生選手、世界代表與轉生留學生的完整可搜尋名錄。",
 };
 
 export default function ReincarnatedPlayersPage() {
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
   const homeHref = `${basePath}/`;
-  const regionCount = new Set(players.map((player) => player.scoutRegion)).size;
+  const regionCount = new Set(catalogPlayers.map((player) => player[2])).size;
 
   return (
     <main className="reincarnated-page">
@@ -26,23 +29,27 @@ export default function ReincarnatedPlayersPage() {
         <div>
           <p className="eyebrow">TOPIC 03 · <span lang="ja">転生選手</span>（轉生選手）</p>
           <h1>找得到，<br /><span>才搶得到。</span></h1>
-          <p>分開查看出生地、開局地域與 Scout 地點，再用守備位置與本站推薦度快速縮小強力轉生選手（強力な転生選手）的候選名單。</p>
+          <p>先用完整名錄查姓名、年代、開局地域、守備位置與星數，再查看本站精選的強力轉生選手（強力な転生選手）與 Scout 地點。</p>
         </div>
         <div className="reincarnated-hero-stats" aria-label="頁面資料摘要">
-          <div><strong>{players.length}</strong><span>推薦選手</span></div>
-          <div><strong>{regionCount}</strong><span>Scout 地點</span></div>
-          <div><strong>6</strong><span>守備位置</span></div>
+          <div><strong>{catalogPlayers.length}</strong><span>名錄紀錄</span></div>
+          <div><strong>{worldPlayerCount}</strong><span>世界代表</span></div>
+          <div><strong>{regionCount}</strong><span>日本地域</span></div>
         </div>
       </header>
 
       <aside className="region-warning">
         <strong>地域要看哪一個？</strong>
-        <p>出生地、出身高中與遊戲判定的出身地不一定相同。「開局地域」看高中所在地；轉生球探（転生スカウト）則看遊戲中的「Scout 地點」。例如江川卓出生於福島，但開局與 Scout 都在栃木。本頁篩選以 Scout 地點為準。</p>
+        <p>出生地、出身高中與遊戲判定的出身地不一定相同。「開局地域」看高中所在地；轉生球探（転生スカウト）則看遊戲中的「Scout 地點」。例如江川卓出生於福島，但開局與 Scout 都在栃木。完整名錄依開局地域篩選；下方推薦名單依 Scout 地點篩選。</p>
         <div className="region-warning-links">
           <a href="https://appmedia.jp/pawapuro2026-2027/80080750" target="_blank" rel="noreferrer">AppMedia 規則 ↗</a>
           <a href="https://sp.baseball.findfriends.jp/player/19550002/" target="_blank" rel="noreferrer">江川出生資料 ↗</a>
         </div>
       </aside>
+
+      <CatalogExplorer />
+
+      <InternationalExplorer />
 
       <RegionRanking />
 
@@ -51,9 +58,13 @@ export default function ReincarnatedPlayersPage() {
       <section className="sources reincarnated-sources" aria-labelledby="reincarnated-sources-title">
         <p className="eyebrow">SOURCES · 2026-08-17 核對</p>
         <h2 id="reincarnated-sources-title">資料與評價方式</h2>
-        <p>姓名、年代、出生地、開局地域、Scout 地點、守備位置與推薦理由依日本資料整理。S／A／B 是本站依初始能力、特殊能力、位置稀缺性與攻略來源推薦所做的編輯評價，不是 KONAMI 官方分級。</p>
+        <p>完整名錄的姓名、年代、開局地域、主要守備位置、星數與 DLC 標記取自 Game8 2026–2027 搜尋工具；來源頁最後更新於 2026-07-06。推薦卡另依日本攻略資料整理出生地與 Scout 地點。S／A／B 是本站依初始能力、特殊能力、位置稀缺性與攻略來源推薦所做的編輯評價，不是 KONAMI 官方分級。</p>
         <div className="source-links">
           <a href="https://game8.jp/eikan-nine/553746" target="_blank" rel="noreferrer">Game8：おすすめ転生OB・最強ランキング ↗</a>
+          <a href="https://game8.jp/eikan-nine/553745" target="_blank" rel="noreferrer">Game8：転生OB完整搜尋工具 ↗</a>
+          <a href="https://game8.jp/eikan-nine/553748" target="_blank" rel="noreferrer">Game8：投手の転生OB一覧 ↗</a>
+          <a href="https://game8.jp/eikan-nine/626986" target="_blank" rel="noreferrer">Game8：外国人OB・転生留学生一覧 ↗</a>
+          <a href="https://www.konami.com/pawa/2026-2027/player/wbc" target="_blank" rel="noreferrer">KONAMI：2026 世界代表名單 ↗</a>
           <a href="https://game8.jp/eikan-nine/553749" target="_blank" rel="noreferrer">Game8：野手の転生OBランキング ↗</a>
           <a href="https://appmedia.jp/pawapuro2026-2027/80080750" target="_blank" rel="noreferrer">AppMedia：転生スカウトおすすめ選手 ↗</a>
           <a href="https://appmedia.jp/eikan2024/77996234" target="_blank" rel="noreferrer">AppMedia：江川卓 Scout 候選地點 ↗</a>

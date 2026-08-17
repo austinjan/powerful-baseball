@@ -65,7 +65,7 @@ export const players: ReincarnatedPlayer[] = [
   { name: "イチロー（鈴木一朗）", year: 1989, startRegion: "愛知", scoutRegion: "愛知", positions: ["外野手"], recommendation: "S", reason: "高星數、特殊能力豐富，守備與傳球能力也適合轉換守備位置。", source: "game8" },
   { name: "野村克也", year: 1951, startRegion: "京都", scoutRegion: "京都", positions: ["捕手"], recommendation: "S", reason: "同時持有球界頭腦（球界の頭脳）與低語戰術（ささやき戦術）。", dlc: true, source: "game8" },
   { name: "古田敦也", year: 1981, startRegion: "兵庫", scoutRegion: "兵庫", positions: ["捕手"], recommendation: "S", reason: "球界頭腦（球界の頭脳）能支援投手，初始肩力也很突出。", dlc: true, source: "game8" },
-  { name: "田淵幸一", year: 1962, startRegion: "東京", scoutRegion: "東京", positions: ["捕手"], recommendation: "S", reason: "初始星數高，兼具長打火力與捕手守備價值。", source: "game8" },
+  { name: "田淵幸一", year: 1962, startRegion: "東京", scoutRegion: "東京", positions: ["捕手"], recommendation: "S", reason: "初始星數高，兼具長打火力與捕手守備價值。", dlc: true, source: "game8" },
   { name: "王貞治", year: 1956, startRegion: "東京", scoutRegion: "東京", positions: ["一壘手"], recommendation: "S", reason: "最強級中心打者；DLC 版本追加金色特殊能力（金特殊能力）。", source: "appmedia" },
   { name: "田中将大（DLC）", year: 2004, startRegion: "北海道", scoutRegion: "兵庫", positions: ["投手"], recommendation: "S", reason: "初始能力極高，並持有勝利之星（勝利の星）。", dlc: true, source: "game8" },
   { name: "金田正一", year: 1949, startRegion: "愛知", scoutRegion: "愛知", positions: ["投手"], recommendation: "A", reason: "初始能力高，持有怪童（怪童）、鬥魂（闘魂）與多個藍色特殊能力（青特殊能力）。", dlc: true, source: "game8" },
