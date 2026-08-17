@@ -31,6 +31,24 @@ test("every displayed player has an explicit birthplace", () => {
   assert.equal(players.every((player) => Boolean(birthRegions[player.name])), true);
 });
 
+test("includes the requested catcher regions and distinguishes entry from scout location", () => {
+  const expected = {
+    "古田敦也": { birth: "兵庫", start: "兵庫", scout: "兵庫" },
+    "野村克也": { birth: "京都", start: "京都", scout: "京都" },
+    "谷繁元信": { birth: "廣島", start: "島根", scout: "廣島" },
+    "阿部慎之助": { birth: "千葉", start: "東京", scout: "千葉" },
+    "田淵幸一": { birth: "東京", start: "東京", scout: "東京" },
+  } as const;
+
+  for (const [name, regions] of Object.entries(expected)) {
+    const player = players.find((candidate) => candidate.name === name);
+    assert.ok(player, `${name} should be included`);
+    assert.equal(birthRegions[name], regions.birth);
+    assert.equal(player.startRegion, regions.start);
+    assert.equal(player.scoutRegion, regions.scout);
+  }
+});
+
 test("a two-way player appears in both applicable position categories", () => {
   const pitchers = filterPlayers(players, { query: "大谷", region: "全部", position: "投手", recommendation: "全部" });
   const outfielders = filterPlayers(players, { query: "大谷", region: "全部", position: "外野手", recommendation: "全部" });
