@@ -1,0 +1,2056 @@
+[
+  {
+    "zh": "暴走球",
+    "ja": "暴れ球",
+    "kind": "gold",
+    "position": "pitcher",
+    "effect": "直球尾勁更強，但控球偏移也更大。",
+    "rating": "B",
+    "reason": "有威力也有副作用，不如純增益金特穩。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "怪物球威",
+    "ja": "怪物球威",
+    "kind": "gold",
+    "position": "pitcher",
+    "effect": "球質大幅變重，擊球較難飛遠。",
+    "rating": "A",
+    "reason": "全打席泛用，能壓低長打。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "完全燃燒",
+    "ja": "完全燃焼",
+    "kind": "gold",
+    "position": "pitcher",
+    "effect": "得點圈有人且體力約 1/3 以上時，球質、尾勁提升，但耗體增加。",
+    "rating": "B",
+    "reason": "危機時強，先發要留意耗體。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "換檔",
+    "ja": "ギアチェンジ",
+    "kind": "gold",
+    "position": "pitcher",
+    "effect": "先發第 5 局後、領先 3 分內或平手且壘上有人：球速 +1 km/h、控球 +10，變化球更晚變化。",
+    "rating": "A",
+    "reason": "接戰後半常觸發。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "驚異切味",
+    "ja": "驚異の切れ味",
+    "kind": "gold",
+    "position": "pitcher",
+    "effect": "變化球開始轉折得更晚。",
+    "rating": "A",
+    "reason": "所有變化球受益，難以被掌握。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "十字加農",
+    "ja": "クロスキャノン",
+    "kind": "gold",
+    "position": "pitcher",
+    "effect": "投向對角線球路時，直球體感球速提高。",
+    "rating": "B",
+    "reason": "吃投球位置與配球。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "後半力",
+    "ja": "終盤力",
+    "kind": "gold",
+    "position": "pitcher",
+    "effect": "先發且領先或落後不超過 3 分時：球速 +4 km/h、控球 +10、變化量 +2。",
+    "rating": "A",
+    "reason": "先發後段非常強，但不是後援能力。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "主砲剋星",
+    "ja": "主砲キラー",
+    "kind": "gold",
+    "position": "pitcher",
+    "effect": "對上巧打 B 以上或力量 A 以上：球速 +3 km/h、變化量 +1，變化球更晚轉折。",
+    "rating": "A",
+    "reason": "強敵核心打者戰很實用。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "勝利之星",
+    "ja": "勝利の星",
+    "kind": "gold",
+    "position": "pitcher",
+    "effect": "登板中隊友打者巧打 +5、力量 +5。",
+    "rating": "S",
+    "reason": "無條件強化整條打線。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "精密機械",
+    "ja": "精密機械",
+    "kind": "gold",
+    "position": "pitcher",
+    "effect": "對好球帶低角控球大幅提升；也是低球中心（低め中心）戰術卡 6 以上的重要條件。",
+    "rating": "S",
+    "reason": "穩定且直接改善指令品質。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "超投打躍動",
+    "ja": "超投打躍動",
+    "kind": "gold",
+    "position": "pitcher",
+    "effect": "投手出場失 2 分以下時大幅提高自身打擊；至少 1 安打時大幅提高控球、變化量。",
+    "rating": "A",
+    "reason": "先發／二刀流強；後援常無打席則價值低。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "延遲出手",
+    "ja": "ディレイドアーム",
+    "kind": "gold",
+    "position": "pitcher",
+    "effect": "持球時間更長，打者較難看清出手。",
+    "rating": "B",
+    "reason": "泛用但效果難量化。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "鐵腕",
+    "ja": "鉄腕",
+    "kind": "gold",
+    "position": "pitcher",
+    "effect": "幾乎不受當日狀況（調子）影響。",
+    "rating": "A",
+    "reason": "榮冠無法總挑狀況，穩定性高。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "鬥魂",
+    "ja": "闘魂",
+    "kind": "gold",
+    "position": "pitcher",
+    "effect": "未耗盡體力，且領先 2 分內或落後、自責分 2 以下時，球質變重、較不動搖並無效化打者威壓感。",
+    "rating": "A",
+    "reason": "接戰條件常見，兼具多重保護。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "Doctor K",
+    "ja": "ドクターK",
+    "kind": "gold",
+    "position": "pitcher",
+    "effect": "兩好球後球速 +4 km/h、變化量 +2。",
+    "rating": "S",
+    "reason": "多球種投手收益大；可能略增用球數。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "超毅力",
+    "ja": "ド根性",
+    "kind": "gold",
+    "position": "pitcher",
+    "effect": "先發體力耗盡後，能力下降較早停止。",
+    "rating": "B",
+    "reason": "長局數保險，不如避免耗盡。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "頭檔全開",
+    "ja": "トップギア",
+    "kind": "gold",
+    "position": "pitcher",
+    "effect": "先發第 1～2 局球速 +4 km/h、控球 +13、變化量 +2。",
+    "rating": "A",
+    "reason": "防開局爆炸，也可覆蓋慢熱（スロースターター）。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "內角無雙",
+    "ja": "内角無双",
+    "kind": "gold",
+    "position": "pitcher",
+    "effect": "投內角時控球與球威大幅提升；可支援內角中心戰術卡 6 以上。",
+    "rating": "S",
+    "reason": "高頻指令與直接球威提升兼具。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "高轉速陀螺球",
+    "ja": "ハイスピンジャイロ",
+    "kind": "gold",
+    "position": "pitcher",
+    "effect": "直球呈陀螺旋轉，體感球速大幅提高。",
+    "rating": "A",
+    "reason": "直球派強，變化球派收益較小。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "變幻自在",
+    "ja": "変幻自在",
+    "kind": "gold",
+    "position": "pitcher",
+    "effect": "快球接慢變化球或反向搭配時，快球體感更快、變化球更晚轉折；支援緩急重視戰術。",
+    "rating": "S",
+    "reason": "配球自然、觸發頻率高。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "禁止全壘打",
+    "ja": "本塁打厳禁",
+    "kind": "gold",
+    "position": "pitcher",
+    "effect": "失投進紅中的機率大幅降低。",
+    "rating": "A",
+    "reason": "降低單球致命風險。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "威壓感・投手",
+    "ja": "威圧感・投手",
+    "kind": "gold",
+    "position": "pitcher",
+    "effect": "第二任以後登板時，對手巧打 -20、力量 -20。",
+    "rating": "S",
+    "reason": "適用：後援；後援／終結者極強，先發不發動。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "強心臟",
+    "ja": "強心臓",
+    "kind": "gold",
+    "position": "pitcher",
+    "effect": "得點圈有人時球速 +2 km/h、變化量 +3。",
+    "rating": "S",
+    "reason": "榮冠危機自操作頻繁，效果大。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "左打剋星",
+    "ja": "左キラー",
+    "kind": "gold",
+    "position": "pitcher",
+    "effect": "對左打者球速 +3 km/h、控球 +7，但耗體增加。",
+    "rating": "A",
+    "reason": "不會像階級能力因賽後事件降級。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "不屈之魂",
+    "ja": "不屈の魂",
+    "kind": "gold",
+    "position": "pitcher",
+    "effect": "幾乎不會進入動搖狀態。",
+    "rating": "S",
+    "reason": "榮冠容易連打，能避免崩盤。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "怪童",
+    "ja": "怪童",
+    "kind": "gold",
+    "position": "pitcher",
+    "effect": "直球體感球速大幅高於面板球速。",
+    "rating": "A",
+    "reason": "直球派強力，吃球種配置。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "釘住跑者",
+    "ja": "走者釘付",
+    "kind": "gold",
+    "position": "pitcher",
+    "effect": "投球動作大幅加快，更難被盜壘。",
+    "rating": "B",
+    "reason": "對快腿隊很強，平常較情境化。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "汽油桶",
+    "ja": "ガソリンタンク",
+    "kind": "gold",
+    "position": "pitcher",
+    "effect": "登板後體力恢復非常快。",
+    "rating": "B",
+    "reason": "密集賽程有價值，單場效果不直接。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "全壘打藝術家",
+    "ja": "アーチスト",
+    "kind": "gold",
+    "position": "fielder",
+    "effect": "強振時全壘打型擊球大幅增加；不能和直線球（ラインドライブ）共存。",
+    "rating": "S",
+    "reason": "自動進行也容易增加全壘打。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "安打製造機",
+    "ja": "安打製造機",
+    "kind": "gold",
+    "position": "fielder",
+    "effect": "巧打時安打型擊球大幅增加。",
+    "rating": "S",
+    "reason": "配合中間方向／流打，穩定上壘。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "一球入魂",
+    "ja": "一球入魂",
+    "kind": "gold",
+    "position": "fielder",
+    "effect": "取得第一個好球前，巧打 +15、力量 +15。",
+    "rating": "A",
+    "reason": "每打席都有機會，早球進攻強。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "王牌剋星",
+    "ja": "エースキラー",
+    "kind": "gold",
+    "position": "fielder",
+    "effect": "對王牌級投手巧打 +15、力量 +15。",
+    "rating": "A",
+    "reason": "強敵戰價值高，弱隊戰不觸發。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "大逆轉",
+    "ja": "大番狂わせ",
+    "kind": "gold",
+    "position": "fielder",
+    "effect": "先發且第 5 局後平手，或終盤落後／平手、壘上有人時，力量變成 S（原本 S 不變）。",
+    "rating": "B",
+    "reason": "逆轉爆發力高，但條件窄。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "外角必打",
+    "ja": "外角必打",
+    "kind": "gold",
+    "position": "fielder",
+    "effect": "非常擅長外角球；不能和內角系共存。",
+    "rating": "A",
+    "reason": "可支援流打戰術 6 以上。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "火場怪力",
+    "ja": "火事場の馬鹿力",
+    "kind": "gold",
+    "position": "fielder",
+    "effect": "終盤落後時巧打 +20、力量 +20。",
+    "rating": "A",
+    "reason": "逆風局強，領先時無效。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "氣迫頭撲",
+    "ja": "気迫ヘッド",
+    "kind": "gold",
+    "position": "fielder",
+    "effect": "接近安全／出局的跑壘會頭部滑壘。",
+    "rating": "C",
+    "reason": "觸發窄，收益難穩定。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "逆襲",
+    "ja": "逆襲",
+    "kind": "gold",
+    "position": "fielder",
+    "effect": "對前一打席壓制自己的投手，巧打 +10、力量 +5。",
+    "rating": "B",
+    "reason": "常見但提升中等。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "恐怖滿壘男",
+    "ja": "恐怖の満塁男",
+    "kind": "gold",
+    "position": "fielder",
+    "effect": "滿壘時巧打 +20、力量 +20。",
+    "rating": "A",
+    "reason": "效果大，場景有限。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "開路先鋒",
+    "ja": "切り込み隊長",
+    "kind": "gold",
+    "position": "fielder",
+    "effect": "無跑者時巧打 +15、力量 +10。",
+    "rating": "A",
+    "reason": "放一棒高頻發動。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "藝術流打",
+    "ja": "芸術的流し打ち",
+    "kind": "gold",
+    "position": "fielder",
+    "effect": "巧打流向反方向時更容易形成安打。",
+    "rating": "S",
+    "reason": "可支援流打戰術 6 以上，安打型核心。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "廣角砲",
+    "ja": "広角砲",
+    "kind": "gold",
+    "position": "fielder",
+    "effect": "反方向也能打出非常強的球；不能和拉打系共存。",
+    "rating": "S",
+    "reason": "長打型核心，也能提升流打戰術。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "高球必打",
+    "ja": "高球必打",
+    "kind": "gold",
+    "position": "fielder",
+    "effect": "非常擅長高球；不能和低球系共存。",
+    "rating": "B",
+    "reason": "可支援犧牲飛球，但該指令使用較少。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "高速雷射",
+    "ja": "高速レーザー",
+    "kind": "gold",
+    "position": "fielder",
+    "effect": "外野傳球軌跡低且非常快。",
+    "rating": "A",
+    "reason": "適用：外野；抑制推進與高飛犧牲。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "決勝全力一擊",
+    "ja": "渾身の決勝打",
+    "kind": "gold",
+    "position": "fielder",
+    "effect": "第 6 局後、平手或落後且跑者回來即可超前時，巧打約 +12。",
+    "rating": "B",
+    "reason": "接戰有效，但觸發窗口有限。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "耳語戰術",
+    "ja": "ささやき戦術",
+    "kind": "gold",
+    "position": "catcher",
+    "effect": "捕手守備、得點圈有人時，對手巧打 -5、力量 -5。",
+    "rating": "A",
+    "reason": "適用：捕手；危機中穩定削弱打者。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "重戰車",
+    "ja": "重戦車",
+    "kind": "gold",
+    "position": "fielder",
+    "effect": "本壘衝撞時提高捕手掉球機會。",
+    "rating": "C",
+    "reason": "需要本壘交叉攻防。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "精神支柱",
+    "ja": "精神的支柱",
+    "kind": "gold",
+    "position": "fielder",
+    "effect": "隊友投手控球 +10；隊友打者巧打 +10、力量 +5。",
+    "rating": "S",
+    "reason": "無條件整隊增益，最強泛用之一。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "代打之神",
+    "ja": "代打の神様",
+    "kind": "gold",
+    "position": "fielder",
+    "effect": "代打時巧打 +25、力量 +20。",
+    "rating": "B",
+    "reason": "替補神技，主力先發幾乎不發動。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "低球必打",
+    "ja": "低球必打",
+    "kind": "gold",
+    "position": "fielder",
+    "effect": "非常擅長低球；不能和高球系共存。",
+    "rating": "B",
+    "reason": "效果穩定但戰術價值有限。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "鐵壁",
+    "ja": "鉄の壁",
+    "kind": "gold",
+    "position": "catcher",
+    "effect": "捕手本壘觸殺時，大幅降低對手「突入本壘／重戰車」發動率。",
+    "rating": "B",
+    "reason": "適用：捕手；防特定跑壘技。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "傳說再見男",
+    "ja": "伝説のサヨナラ男",
+    "kind": "gold",
+    "position": "fielder",
+    "effect": "再見局面巧打 +20、力量 +20。",
+    "rating": "C",
+    "reason": "效果大但極少觸發。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "魔術跑者",
+    "ja": "トリックスター",
+    "kind": "gold",
+    "position": "fielder",
+    "effect": "上壘後增加投手耗體、降低內野守備；多人上壘會進一步降控球與變化量。",
+    "rating": "A",
+    "reason": "能造成連鎖壓力，快腿上壘型尤其好。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "內角必打",
+    "ja": "内角必打",
+    "kind": "gold",
+    "position": "fielder",
+    "effect": "非常擅長內角球；不能和外角系共存。",
+    "rating": "S",
+    "reason": "可支援拉打戰術 6 以上。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "火箭肩傳",
+    "ja": "バズーカ送球",
+    "kind": "gold",
+    "position": "catcher",
+    "effect": "捕手阻殺盜壘的傳球極快。",
+    "rating": "A",
+    "reason": "適用：捕手；提升阻殺的到球與觸殺速度。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "熱身升溫",
+    "ja": "ヒートアップ",
+    "kind": "gold",
+    "position": "fielder",
+    "effect": "每個好球數巧打 +8、力量 +8。",
+    "rating": "A",
+    "reason": "兩好球時 +16/+16，後段打席很強。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "拉打達人",
+    "ja": "引っ張り屋",
+    "kind": "gold",
+    "position": "fielder",
+    "effect": "強振拉打可形成非常強的擊球；不能和廣角系共存。",
+    "rating": "S",
+    "reason": "支援拉打戰術 6 以上，配全壘打型很強。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "魔術師",
+    "ja": "魔術師",
+    "kind": "gold",
+    "position": "fielder",
+    "effect": "守備時傳球、背向追球更快，起步也更早。",
+    "rating": "A",
+    "reason": "內外野皆有可感差異。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "猛打",
+    "ja": "メッタ打ち",
+    "kind": "gold",
+    "position": "fielder",
+    "effect": "已有 2 安後，第 3 打席起巧打 +20、力量 +5。",
+    "rating": "B",
+    "reason": "熱手時強，未先敲安不發動。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "火箭起跑",
+    "ja": "ロケットスタート",
+    "kind": "gold",
+    "position": "fielder",
+    "effect": "擊球後起跑大幅加快。",
+    "rating": "S",
+    "reason": "可支援滾地球（転がせ）6 以上，對榮冠戰術很實用。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "威壓感・野手",
+    "ja": "威圧感・野手",
+    "kind": "gold",
+    "position": "fielder",
+    "effect": "自己打席使投手球速 -2 km/h、控球 -10、耗體 +15；前一棒也受較小耗體壓力。",
+    "rating": "S",
+    "reason": "站上打席即發動，還能惠及前一棒。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "勝負師",
+    "ja": "勝負師",
+    "kind": "gold",
+    "position": "fielder",
+    "effect": "得點圈有人時巧打 +20、力量 +15。",
+    "rating": "S",
+    "reason": "得分場景高頻且增幅大。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "左投剋星",
+    "ja": "左腕キラー",
+    "kind": "gold",
+    "position": "fielder",
+    "effect": "對左投巧打 +20、力量 +15。",
+    "rating": "A",
+    "reason": "穩定對位加成且不會賽後降級。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "球界頭腦",
+    "ja": "球界の頭脳",
+    "kind": "gold",
+    "position": "catcher",
+    "effect": "捕手上場時，投手控球 +15、耗體 -11；投手不調／絕不調再加球速 +2 km/h。",
+    "rating": "S",
+    "reason": "適用：捕手；直接改善整個投手群，正捕手最高優先。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "電光石火",
+    "ja": "電光石火",
+    "kind": "gold",
+    "position": "fielder",
+    "effect": "盜壘時跑力大幅提升；一壘或一、三壘時使投手控球 -10 並增加耗體。",
+    "rating": "S",
+    "reason": "適用：快腿；盜壘戰術與投手壓力兼具。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "高速跑壘",
+    "ja": "高速ベースラン",
+    "kind": "gold",
+    "position": "fielder",
+    "effect": "非盜壘跑壘時跑力大幅提升，抵達三壘不做頭撲。",
+    "rating": "A",
+    "reason": "多拿壘包，長打轉得分更穩。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "精準傳球",
+    "ja": "ストライク送球",
+    "kind": "gold",
+    "position": "fielder",
+    "effect": "傳球大幅不易偏離。",
+    "rating": "A",
+    "reason": "適用：內野／捕手；降低致命失誤。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "鐵人",
+    "ja": "鉄人",
+    "kind": "gold",
+    "position": "fielder",
+    "effect": "極難受傷。",
+    "rating": "B",
+    "reason": "長期模式有用，單場不直接增強。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80075350"
+    ]
+  },
+  {
+    "zh": "安全圈○",
+    "ja": "安全圏○",
+    "kind": "blue",
+    "position": "pitcher",
+    "effect": "無壓力場面提升控球。",
+    "rating": "C",
+    "reason": "多在低壓差局，勝負影響較低。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "重球",
+    "ja": "重い球",
+    "kind": "blue",
+    "position": "pitcher",
+    "effect": "球質變重，擊球較難飛遠。",
+    "rating": "A",
+    "reason": "全局泛用、抑制長打。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "跨局○",
+    "ja": "回またぎ○",
+    "kind": "blue",
+    "position": "pitcher",
+    "effect": "後援跨局較不易疲勞。",
+    "rating": "A",
+    "reason": "適用：後援；多局救援很實用。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "勝運",
+    "ja": "勝ち運",
+    "kind": "blue",
+    "position": "pitcher",
+    "effect": "登板中隊友打者力量 +5。",
+    "rating": "A",
+    "reason": "適用：先發；長時間無條件強化打線。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "緩急○",
+    "ja": "緩急○",
+    "kind": "blue",
+    "position": "pitcher",
+    "effect": "直球與慢變化球交互使用時能力提升；緩急重視戰術卡 6 以上條件之一。",
+    "rating": "S",
+    "reason": "高頻且能升戰術。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "球速穩定",
+    "ja": "球速安定",
+    "kind": "blue",
+    "position": "pitcher",
+    "effect": "平均球速 +2 km/h。",
+    "rating": "A",
+    "reason": "不吃情境，簡單有效。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "銳利○",
+    "ja": "キレ○",
+    "kind": "blue",
+    "position": "pitcher",
+    "effect": "變化球更晚轉折；打者近處才變化，亦可支援「打たせてとれ」戰術卡 6 以上。",
+    "rating": "S",
+    "reason": "多變化球時收益高。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "緊急登板○",
+    "ja": "緊急登板○",
+    "kind": "blue",
+    "position": "pitcher",
+    "effect": "局中上場時控球 +10。",
+    "rating": "A",
+    "reason": "適用：後援；危機換投直接生效。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "十字火球",
+    "ja": "クロスファイヤー",
+    "kind": "blue",
+    "position": "pitcher",
+    "effect": "對角線投直球時體感球速提高。",
+    "rating": "B",
+    "reason": "吃左右投與配球路線。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "牽制○",
+    "ja": "牽制○",
+    "kind": "blue",
+    "position": "pitcher",
+    "effect": "牽制動作稍快且較不易暴傳。",
+    "rating": "C",
+    "reason": "盜壘隊才明顯。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "毅力○",
+    "ja": "根性○",
+    "kind": "blue",
+    "position": "pitcher",
+    "effect": "先發體力耗盡後，能力下降會在一定程度停止。",
+    "rating": "B",
+    "reason": "長投保險。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "陀螺球",
+    "ja": "ジャイロボール",
+    "kind": "blue",
+    "position": "pitcher",
+    "effect": "直球呈陀螺旋轉，體感球速提高。",
+    "rating": "A",
+    "reason": "直球派有效。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "漸入佳境",
+    "ja": "尻上がり",
+    "kind": "blue",
+    "position": "pitcher",
+    "effect": "先發第 7～8 局球速 +2 km/h、變化量 +1、控球 +5；第 9 局後為 +4、+2、+10。",
+    "rating": "S",
+    "reason": "適用：先發；後段提升幅度大。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "強打者對策○",
+    "ja": "対強打者○",
+    "kind": "blue",
+    "position": "pitcher",
+    "effect": "對巧打 B 或力量 A 的打者，球速 +2 km/h、變化量 +1。",
+    "rating": "A",
+    "reason": "強敵戰常觸發。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "跑者對策○",
+    "ja": "対ランナー○",
+    "kind": "blue",
+    "position": "pitcher",
+    "effect": "一壘或一、三壘有人時控球 +5、耗體降低。",
+    "rating": "A",
+    "reason": "常見跑者情境，穩住投球。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "投手丘反應○",
+    "ja": "打球反応○",
+    "kind": "blue",
+    "position": "pitcher",
+    "effect": "更容易處理投手正面強襲球。",
+    "rating": "A",
+    "reason": "守備直接減少穿越。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "開局○",
+    "ja": "立ち上がり○",
+    "kind": "blue",
+    "position": "pitcher",
+    "effect": "先發第 1 局球速 +4、控球 +13、變化量 +2；第 2 局 +2、+7、+1。",
+    "rating": "S",
+    "reason": "適用：先發；防止早局爆炸，並覆蓋慢熱。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "奪三振",
+    "ja": "奪三振",
+    "kind": "blue",
+    "position": "pitcher",
+    "effect": "兩好球後球速 +2 km/h、變化量 +1。",
+    "rating": "S",
+    "reason": "多球種更強，但用球數可能略增。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "持球○",
+    "ja": "球持ち○",
+    "kind": "blue",
+    "position": "pitcher",
+    "effect": "出手點顯示較晚，打者較難判斷。",
+    "rating": "A",
+    "reason": "泛用，但自動比賽幅度難量化。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "鬥志",
+    "ja": "闘志",
+    "kind": "blue",
+    "position": "pitcher",
+    "effect": "未耗盡體力且自責分 0、平手或領先時球質變重、較不動搖，並無效化打者威壓感。",
+    "rating": "A",
+    "reason": "領先守成實用。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "投打躍動",
+    "ja": "投打躍動",
+    "kind": "blue",
+    "position": "pitcher",
+    "effect": "投手出場失 2 分以下時提升打擊；至少 1 安時提升控球、變化量。",
+    "rating": "A",
+    "reason": "適用：先發／二刀流；後援可能無打席。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "內角攻勢",
+    "ja": "内角攻め",
+    "kind": "blue",
+    "position": "pitcher",
+    "effect": "投內角時控球提升；內角中心戰術卡 6 以上條件。",
+    "rating": "S",
+    "reason": "戰術與實際壓制兼具。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "自然噴射",
+    "ja": "ナチュラルシュート",
+    "kind": "blue",
+    "position": "pitcher",
+    "effect": "直球會自然向投手慣用手方向微幅變化。",
+    "rating": "B",
+    "reason": "增加軌跡差，但不直接加面板。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "逃球",
+    "ja": "逃げ球",
+    "kind": "blue",
+    "position": "pitcher",
+    "effect": "失投較不容易進紅中。",
+    "rating": "A",
+    "reason": "降低一發風險。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "低球○",
+    "ja": "低め○",
+    "kind": "blue",
+    "position": "pitcher",
+    "effect": "投低角時控球提升；低球中心戰術卡 6 以上條件。",
+    "rating": "S",
+    "reason": "戰術價值高，但 2026 攻略觀察低球中心本身可能較易被打，仍待實測。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "微滑直球",
+    "ja": "真っスラ",
+    "kind": "blue",
+    "position": "pitcher",
+    "effect": "直球會自然向非慣用手方向微幅滑動。",
+    "rating": "B",
+    "reason": "增加軌跡差，數值未公開。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "關鍵○",
+    "ja": "要所○",
+    "kind": "blue",
+    "position": "pitcher",
+    "effect": "終盤領先，壘上跑者回來就會平手／逆轉時，球速 +2 km/h、控球 +5。",
+    "rating": "A",
+    "reason": "守成危機直接增益。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "出手○",
+    "ja": "リリース○",
+    "kind": "blue",
+    "position": "pitcher",
+    "effect": "直球與變化球投球動作相同；緩急重視戰術卡 6 以上條件。",
+    "rating": "S",
+    "reason": "高戰術價值。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "存在感・投手",
+    "ja": "存在感・投手",
+    "kind": "blue",
+    "position": "pitcher",
+    "effect": "後援登板時降低對手巧打與力量；攻略資料未公開精確降幅。",
+    "rating": "S",
+    "reason": "適用：後援；AppMedia 認為終結者必備級。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "好球先行",
+    "ja": "ストライク先行",
+    "kind": "blue",
+    "position": "pitcher",
+    "effect": "投球更容易進好球帶。",
+    "rating": "A",
+    "reason": "降低保送與壞球數。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "滅火",
+    "ja": "火消し",
+    "kind": "blue",
+    "position": "pitcher",
+    "effect": "同一局已失分且壘上有人時登板，提高球速與變化量；精確幅度未公開。",
+    "rating": "B",
+    "reason": "救火場景強，但條件窄。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "接捕引導◎",
+    "ja": "フレーミング◎",
+    "kind": "blue",
+    "position": "catcher",
+    "effect": "捕手接捕可大幅提高投手控球；精確幅度未公開。",
+    "rating": "A",
+    "reason": "適用：捕手；整場支援投手，但需由捕手持有。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "危機對應",
+    "ja": "対ピンチ",
+    "kind": "blue",
+    "position": "pitcher",
+    "effect": "得點圈有人時變強；A 級的金特上位為強心臟。",
+    "rating": "S",
+    "reason": "榮冠自操作常在得點圈危機，等級越高越好。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "對左打者",
+    "ja": "対左打者",
+    "kind": "blue",
+    "position": "pitcher",
+    "effect": "對左打者時球速／控球等提高；A 級可升左打剋星。",
+    "rating": "A",
+    "reason": "對位常見，強度看對方打線。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "抗打擊",
+    "ja": "打たれ強さ",
+    "kind": "blue",
+    "position": "pitcher",
+    "effect": "被連續安打後較不容易動搖。",
+    "rating": "A",
+    "reason": "榮冠連打崩盤常見。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "直球尾勁",
+    "ja": "ノビ",
+    "kind": "blue",
+    "position": "pitcher",
+    "effect": "直球體感速度／尾勁提高；A 級可升怪童。",
+    "rating": "A",
+    "reason": "直球派強。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "快投",
+    "ja": "クイック",
+    "kind": "blue",
+    "position": "pitcher",
+    "effect": "壘上有人時投球動作加快，較難被盜壘。",
+    "rating": "B",
+    "reason": "對快腿隊較重要。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "外角打者",
+    "ja": "アウトコースヒッター",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "擅長外角球；不能和內角系共存。",
+    "rating": "S",
+    "reason": "可支援流打戰術 6 以上。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "安打型打者",
+    "ja": "アベレージヒッター",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "巧打時更易形成安打；可支援中間方向（センター返し）6 以上。",
+    "rating": "S",
+    "reason": "榮冠安打型核心。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "意外性",
+    "ja": "意外性",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "第 5 局後平手或終盤落後／平手且壘上有人時，力量變成 A（原 A 以上不變）。",
+    "rating": "B",
+    "reason": "低力量球員逆轉時有用。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "老練打擊",
+    "ja": "いぶし銀",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "終盤落後 1 分或平手、得點圈有人時，巧打較容易形成安打。",
+    "rating": "B",
+    "reason": "接戰有用但條件多。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "內角打者",
+    "ja": "インコースヒッター",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "擅長內角球；不能和外角系共存。",
+    "rating": "S",
+    "reason": "可支援拉打戰術 6 以上。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "擾亂",
+    "ja": "かく乱",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "上壘後增加投手耗體、降低內野守備；多名跑者時還可降控球與變化量。",
+    "rating": "A",
+    "reason": "上壘型打線能疊壓力。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "連續安打",
+    "ja": "固め打ち",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "已有 2 安後，第 3 打席起巧打 +10、力量 +5。",
+    "rating": "A",
+    "reason": "熱手局面強。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "黏打",
+    "ja": "カット打ち",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "兩好球後巧打，稍慢揮棒也較容易碰成界外。",
+    "rating": "B",
+    "reason": "延長打席、消耗投手。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "逆境○",
+    "ja": "逆境○",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "終盤落後時巧打 +15、力量 +15。",
+    "rating": "A",
+    "reason": "追分有效。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "絕境○",
+    "ja": "窮地○",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "每個好球數巧打 +4、力量 +4。",
+    "rating": "A",
+    "reason": "兩好球有 +8/+8。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "決勝打",
+    "ja": "決勝打",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "第 6 局後，平手或落後且跑者回來即可超前時，巧打 +5。",
+    "rating": "B",
+    "reason": "接戰有用但幅度小。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "廣角打法",
+    "ja": "広角打法",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "反方向也能打出強球；不能和拉打系共存；支援流打 6 以上。",
+    "rating": "S",
+    "reason": "長打型核心。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "高速趨前",
+    "ja": "高速チャージ",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "更快處理短打球。",
+    "rating": "C",
+    "reason": "角落內野特定場景。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "破解耳語",
+    "ja": "ささやき破り",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "無效化對方捕手的耳語戰術。",
+    "rating": "C",
+    "reason": "對方沒能力就無效。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "再見男",
+    "ja": "サヨナラ男",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "全壘打即可再見時力量 +15；得點圈跑者回來即可再見時巧打 +15。",
+    "rating": "B",
+    "reason": "效果大、觸發少。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "守備職人",
+    "ja": "守備職人",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "守備傳球與背向追球加快。",
+    "rating": "A",
+    "reason": "內外野皆可感，提升低守備球員穩定度。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "初球○",
+    "ja": "初球○",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "取得第一個好球前巧打 +10、力量 +5。",
+    "rating": "A",
+    "reason": "每打席都可能發動。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "對王牌○",
+    "ja": "対エース○",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "對王牌級投手巧打 +10、力量 +10。",
+    "rating": "A",
+    "reason": "強敵戰實用。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "直球對策○",
+    "ja": "対ストレート○",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "更擅長打一般直球，不含二縫線等特殊直球。",
+    "rating": "A",
+    "reason": "直球對位泛用。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "代打○",
+    "ja": "代打○",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "代打時巧打 +15、力量 +15。",
+    "rating": "B",
+    "reason": "替補很好，先發無用。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "變化球對策○",
+    "ja": "対変化球○",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "更擅長打變化球；精確補正未公開。",
+    "rating": "A",
+    "reason": "投手多球種時有用。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "追加保險分",
+    "ja": "ダメ押し",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "終盤領先 4 分以上時力量 +10。",
+    "rating": "C",
+    "reason": "多在勝勢擴大，較少改變勝負。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "開路○",
+    "ja": "チャンスメーカー",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "無跑者時巧打 +10、力量 +5。",
+    "rating": "A",
+    "reason": "一棒與局首打者高頻。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "帳面修正",
+    "ja": "帳尻合わせ",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "自己尚無安打且大幅領先，第 3 打席後提高巧打；幅度未公開。",
+    "rating": "C",
+    "reason": "垃圾時間偏多。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "內野安打○",
+    "ja": "内野安打○",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "擊球後起跑加快；支援滾地球／突襲短打 6 以上。",
+    "rating": "S",
+    "reason": "直接強化榮冠常用的滾地球戰術。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "流打",
+    "ja": "流し打ち",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "巧打流向反方向時更容易安打；支援流打 6 以上。",
+    "rating": "S",
+    "reason": "安打型核心。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "黏纏打擊",
+    "ja": "粘り打ち",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "兩好球後巧打時巧打 +10；可覆蓋三振（※攻略站說法）。",
+    "rating": "S",
+    "reason": "支援打帶跑戰術，兼具消紅特價值。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "高球打者",
+    "ja": "ハイボールヒッター",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "擅長高球；不能和低球系共存。",
+    "rating": "A",
+    "reason": "可支援犧牲飛球 6 以上，但指令較少用。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "強打型",
+    "ja": "パワーヒッター",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "強振時更容易形成全壘打型擊球。",
+    "rating": "S",
+    "reason": "自動進行也能增加全壘打。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "短打○",
+    "ja": "バント○",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "短打更容易成為有效滾地球；支援犧牲短打／強迫取分／突襲短打 6 以上。",
+    "rating": "S",
+    "reason": "榮冠關鍵一分非常實用。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "短打職人",
+    "ja": "バント職人",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "比短打○更穩定；同樣支援短打戰術 6 以上。",
+    "rating": "S",
+    "reason": "短打專門最高級。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "拉打型",
+    "ja": "プルヒッター",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "強振拉打可形成強球；不能和廣角系共存；支援拉打 6 以上。",
+    "rating": "S",
+    "reason": "力量型核心。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "壓迫跑壘",
+    "ja": "プレッシャーラン",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "可能雙殺時，一壘跑者滑入二壘可能誘發對手向一壘暴傳。",
+    "rating": "C",
+    "reason": "觸發與成功率都不明。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "頭部滑壘",
+    "ja": "ヘッドスライディング",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "接近安全／出局時頭部滑壘。",
+    "rating": "C",
+    "reason": "差異難穩定量化。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "守住本壘",
+    "ja": "ホーム死守",
+    "kind": "blue",
+    "position": "catcher",
+    "effect": "捕手防守時，降低對方「突入本壘／重戰車」觸發率。",
+    "rating": "B",
+    "reason": "適用：捕手；特定跑壘防守。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "突入本壘",
+    "ja": "ホーム突入",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "本壘交叉攻防時可能讓捕手掉球。",
+    "rating": "C",
+    "reason": "觸發窄。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "多發彈",
+    "ja": "マルチ弾",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "該場已打全壘打後力量 +10；第 2 支以後不再疊加。",
+    "rating": "A",
+    "reason": "適用：砲手；強者更強，但先要開轟。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "滿壘男",
+    "ja": "満塁男",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "滿壘時巧打 +15、力量 +15。",
+    "rating": "A",
+    "reason": "大局價值高但不常發生。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "氣氛○",
+    "ja": "ムード○",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "隊友野手巧打 +5、力量 +5；多人效果不重複。",
+    "rating": "S",
+    "reason": "至少全隊一人持有，無條件整隊受益。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "直線球",
+    "ja": "ラインドライブ",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "強振時較容易形成平飛球；不能和全壘打型／藝術家共存。",
+    "rating": "B",
+    "reason": "安打與長打折衷，需配合打者類型。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "復仇",
+    "ja": "リベンジ",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "對前一打席壓制自己的投手，巧打 +10。",
+    "rating": "A",
+    "reason": "同投手續投時常觸發。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "雷射肩",
+    "ja": "レーザービーム",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "外野傳球軌跡低且快。",
+    "rating": "A",
+    "reason": "適用：外野；能抑制推進。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "低球打者",
+    "ja": "ローボールヒッター",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "擅長低球；不能和高球系共存。",
+    "rating": "A",
+    "reason": "穩定增強一段好球帶。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "存在感・野手",
+    "ja": "存在感・野手",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "自己及前一棒打席時影響對方投手控球與耗體；精確幅度未公開。",
+    "rating": "S",
+    "reason": "站上打席就有效，影響兩個棒次。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "阻擋",
+    "ja": "ブロッキング",
+    "kind": "blue",
+    "position": "catcher",
+    "effect": "捕手較不容易漏接到身後。",
+    "rating": "A",
+    "reason": "適用：捕手；減少暴投推進，尤其低控投手。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "接捕引導○",
+    "ja": "フレーミング○",
+    "kind": "blue",
+    "position": "catcher",
+    "effect": "捕手接捕可提高投手控球；精確幅度未公開。",
+    "rating": "A",
+    "reason": "適用：捕手；長時間支援整個投手群。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "機會",
+    "ja": "チャンス",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "得點圈有人時提高打擊；A 級可升勝負師。",
+    "rating": "S",
+    "reason": "得分場景頻繁，B／A 很值得。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "對左投手",
+    "ja": "対左投手",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "對左投時提高打擊；A 級可升左投剋星。",
+    "rating": "A",
+    "reason": "取決於賽程對手左右投比例。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "捕手",
+    "ja": "キャッチャー",
+    "kind": "blue",
+    "position": "catcher",
+    "effect": "提升投手控球並降低耗體；AppMedia 表示 C 以上已可感增加用球容量，B 到 A 差距尤其大。",
+    "rating": "S",
+    "reason": "適用：捕手；正捕手最優先能力之一。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "盜壘",
+    "ja": "盗塁",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "提高盜壘成功與跑力；B 以上可能使盜壘戰術卡達 6 以上。",
+    "rating": "S",
+    "reason": "適用：快腿；戰術價值與實際得點能力兼具。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "跑壘",
+    "ja": "走塁",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "提高非盜壘的跑壘效率；A 級可升高速跑壘。",
+    "rating": "A",
+    "reason": "額外壘包直接轉化為得分。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "傳球",
+    "ja": "送球",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "傳球較不易偏離；A 級可升精準傳球。",
+    "rating": "A",
+    "reason": "適用：內野；C 已明顯穩定，繼續提升體感較小。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "不易受傷",
+    "ja": "ケガしにくさ",
+    "kind": "blue",
+    "position": "fielder",
+    "effect": "降低受傷機率；A 級可升鐵人。",
+    "rating": "B",
+    "reason": "長期養成保值，單場無直接增益。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  },
+  {
+    "zh": "恢復",
+    "ja": "回復",
+    "kind": "blue",
+    "position": "pitcher",
+    "effect": "疲勞恢復較快；投手 A 級可升汽油桶。",
+    "rating": "B",
+    "reason": "密集賽程較有價值。",
+    "sources": [
+      "https://game8.jp/eikan-nine/554647",
+      "https://appmedia.jp/pawapuro2026-2027/80077672"
+    ]
+  }
+]

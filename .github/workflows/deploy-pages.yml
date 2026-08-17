@@ -1,0 +1,39 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build:pages
+      - name: Publish static files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin gh-pages
+          git worktree add /tmp/powerful-baseball-gh-pages origin/gh-pages
+          find /tmp/powerful-baseball-gh-pages -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp -R dist/client/. /tmp/powerful-baseball-gh-pages/
+          cd /tmp/powerful-baseball-gh-pages
+          git add -A
+          git commit -m "Deploy GitHub Pages from ${GITHUB_SHA}" || exit 0
+          git push origin HEAD:gh-pages
