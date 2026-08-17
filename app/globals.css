@@ -188,6 +188,8 @@ th { padding: 16px 14px; text-align: left; border-bottom: 1px solid var(--ink); 
 th button { cursor: pointer; border: 0; padding: 0; color: inherit; background: transparent; font-weight: 800; }
 th button span { color: var(--orange); }
 td { padding: 19px 14px; border-bottom: 1px solid var(--line); line-height: 1.5; vertical-align: top; }
+td > strong { display: block; }
+td > small { display: block; margin-top: 3px; color: #6f756d; font-size: 12px; }
 tbody tr { transition: background .12s ease; }
 tbody tr:hover { background: rgba(216,243,66,.22); }
 .jp-cell { font-weight: 800; }

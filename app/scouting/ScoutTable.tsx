@@ -31,12 +31,19 @@ export function ScoutTable() {
 
   const arrow = (key: SortKey) => sortKey === key ? (ascending ? "↑" : "↓") : "↕";
 
+  function abilityParts(value: string) {
+    const match = value.match(/^(.+?)（(.+?)）$/);
+    if (match) return { japanese: match[2], chinese: match[1] };
+    if (value === "無對應特殊能力") return { japanese: "該当する特殊能力なし", chinese: value };
+    return { japanese: value, chinese: "" };
+  }
+
   return (
     <section className="table-panel" aria-labelledby="notes-title">
       <div className="table-intro">
         <div>
           <p className="eyebrow">SCOUTING NOTES</p>
-          <h2 id="notes-title">寸評對照表</h2>
+          <h2 id="notes-title"><span lang="ja">寸評</span>（評語）對照表</h2>
         </div>
         <div className="result-count" aria-live="polite"><strong>{rows.length}</strong> 筆結果</div>
       </div>
@@ -50,7 +57,7 @@ export function ScoutTable() {
             type="button"
             aria-pressed={category === item}
           >
-            {item}{item === "全部" ? "" : `・${item === "打擊" ? "打撃" : item === "守備" ? "守備" : item}`}
+            {item === "全部" ? "全部" : categoryLabels[item]}
           </button>
         ))}
       </div>
@@ -77,7 +84,10 @@ export function ScoutTable() {
               <tr key={note.japanese}>
                 <td data-label="日文" lang="ja" className="jp-cell">{note.japanese}</td>
                 <td data-label="中文">{note.chinese}</td>
-                <td data-label="代表能力">{note.ability}</td>
+                <td data-label="代表能力">
+                  <strong lang="ja">{abilityParts(note.ability).japanese}</strong>
+                  {abilityParts(note.ability).chinese && <small>{abilityParts(note.ability).chinese}</small>}
+                </td>
                 <td data-label="推薦度">
                   <span className={`rating rating-${note.importance}`}>
                     <span aria-hidden="true">{Array.from({ length: note.importance }, () => "●").join("")}</span>
@@ -85,7 +95,7 @@ export function ScoutTable() {
                   </span>
                 </td>
                 <td data-label="分類">
-                  <div className="tags">{note.categories.map((item) => <span className="category-tag" key={item}>{item}</span>)}</div>
+                  <div className="tags">{note.categories.map((item) => <span className="category-tag" key={item}>{categoryLabels[item]}</span>)}</div>
                 </td>
               </tr>
             ))}

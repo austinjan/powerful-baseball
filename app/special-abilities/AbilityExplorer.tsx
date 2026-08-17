@@ -22,7 +22,7 @@ type RatingFilter = "all" | Ability["rating"];
 const kindLabels: Record<KindFilter, string> = {
   all: "全部",
   gold: "金特",
-  blue: "藍特",
+  blue: "青特（藍特）",
 };
 
 const positionLabels: Record<PositionFilter, string> = {
@@ -105,7 +105,7 @@ export default function AbilityExplorer() {
           <input
             type="search"
             value={query}
-            placeholder="例：威壓感、奪三振、盜壘…"
+            placeholder="例：威圧感、奪三振、盗塁…"
             onChange={(event) => setQuery(event.target.value)}
           />
         </label>
@@ -129,7 +129,7 @@ export default function AbilityExplorer() {
               <div className="ability-card-top">
                 <div className="ability-badges">
                   <span className={`kind-badge kind-${ability.kind}`}>
-                    {ability.kind === "gold" ? "金特" : "藍特"}
+                    {ability.kind === "gold" ? "金特" : "青特"}
                   </span>
                   <span className="position-badge">{positionLabels[ability.position]}</span>
                 </div>
@@ -138,8 +138,8 @@ export default function AbilityExplorer() {
                 </span>
               </div>
 
-              <h2>{ability.zh}</h2>
-              <p className="ability-ja" lang="ja">{ability.ja}</p>
+              <h2 lang="ja">{ability.ja}</h2>
+              <p className="ability-ja">{ability.zh}</p>
 
               <div className="ability-detail">
                 <h3>實際影響</h3>

@@ -80,7 +80,7 @@ export const categoryLabels: Record<Category, string> = {
   投手: "投手",
   野手: "野手",
   捕手: "捕手",
-  打擊: "打擊",
+  打擊: "打撃（打擊）",
   守備: "守備",
 };
 

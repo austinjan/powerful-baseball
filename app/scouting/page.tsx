@@ -4,17 +4,17 @@ import { ScoutTable } from "./ScoutTable";
 export const dynamic = "force-static";
 
 export const metadata: Metadata = {
-  title: "新生球探寸評速查｜榮冠作戰室",
-  description: "新生球探（新入生スカウト）寸評的中日對照、代表能力、推薦度與分類篩選。",
+  title: "新入生スカウト（新生球探）寸評速查｜榮冠作戰室",
+  description: "新入生スカウト（新生球探）寸評的日中對照、代表能力、推薦度與分類篩選。",
   openGraph: {
-    title: "新生球探寸評速查｜榮冠作戰室",
-    description: "新生球探（新入生スカウト）寸評的中日對照、代表能力、推薦度與分類篩選。",
+    title: "新入生スカウト（新生球探）寸評速查｜榮冠作戰室",
+    description: "新入生スカウト（新生球探）寸評的日中對照、代表能力、推薦度與分類篩選。",
     images: [],
   },
   twitter: {
     card: "summary",
-    title: "新生球探寸評速查｜榮冠作戰室",
-    description: "新生球探（新入生スカウト）寸評的中日對照、代表能力、推薦度與分類篩選。",
+    title: "新入生スカウト（新生球探）寸評速查｜榮冠作戰室",
+    description: "新入生スカウト（新生球探）寸評的日中對照、代表能力、推薦度與分類篩選。",
     images: [],
   },
 };
@@ -31,9 +31,8 @@ export default function ScoutingPage() {
 
       <header className="detail-hero">
         <div className="hero-copy">
-          <p className="eyebrow">TOPIC 01 · 新生探索</p>
-          <h1>寸評速查</h1>
-          <p className="hero-japanese" lang="ja">新入生スカウト・寸評早見表</p>
+          <p className="eyebrow">TOPIC 01 · <span lang="ja">新入生スカウト</span>（新生球探）</p>
+          <h1><span lang="ja">寸評</span>（評語）速查</h1>
           <p className="hero-summary">先看寸評猜特殊能力，再一起比較能力條、守備位置與交涉反應。不要只靠一句評語決定整名球員。</p>
         </div>
         <aside className="priority-card" aria-label="優先球探摘要">
@@ -51,7 +50,7 @@ export default function ScoutingPage() {
         <div><strong>11–2月</strong><span>球探期間</span></div>
         <div><strong>10次</strong><span>每年最多</span></div>
         <div><strong>8人</strong><span>最多招募</span></div>
-        <p>評判（評判）越高，可去的都道府縣更多，成功率也會提高。</p>
+        <p><span lang="ja">評判</span>越高，可去的都道府縣更多，成功率也會提高。</p>
       </section>
 
       <ScoutTable />
@@ -63,7 +62,7 @@ export default function ScoutingPage() {
         </div>
         <div className="note-copy">
           <p>「必搶」代表特殊能力稀有、對隊伍影響大，或日本攻略來源明確列為高優先。實際球探仍要先補現有陣容缺口。</p>
-          <p>「將来性を感じる」只是較容易覺醒（覚醒）；「彼は『天才』なのかもしれない」也不保證一定是天才肌（天才肌）。</p>
+          <p>「将来性を感じる」只是較容易<span lang="ja">覚醒</span>（覺醒）；「彼は『天才』なのかもしれない」也不保證一定是<span lang="ja">天才肌</span>。</p>
         </div>
       </section>
 
@@ -74,7 +73,7 @@ export default function ScoutingPage() {
         <div className="source-links">
           <a href="https://game8.jp/eikan-nine/554841" target="_blank" rel="noreferrer">Game8：新入生スカウト攻略 ↗</a>
           <a href="https://appmedia.jp/pawapuro2026-2027/80070061" target="_blank" rel="noreferrer">AppMedia：新入生スカウト攻略 ↗</a>
-          <a href="https://www.konami.com/pawa/2026-2027/mode/eikan" target="_blank" rel="noreferrer">KONAMI：栄冠ナイン官方介紹 ↗</a>
+          <a href="https://www.konami.com/pawa/2026-2027/mode/eikan" target="_blank" rel="noreferrer">KONAMI：栄冠ナイン（榮冠九人）官方介紹 ↗</a>
         </div>
       </section>
     </main>
