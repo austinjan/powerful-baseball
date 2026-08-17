@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "vinext dev",
     "build": "vinext build",
-    "build:pages": "NEXT_PUBLIC_BASE_PATH=/powerful-baseball vinext build && mv dist/client/powerful-baseball/_next dist/client/_next && rmdir dist/client/powerful-baseball",
+    "build:pages": "NEXT_PUBLIC_BASE_PATH=/powerful-baseball vinext build && mv dist/client/powerful-baseball/_next dist/client/_next && rmdir dist/client/powerful-baseball && touch dist/client/.nojekyll",
     "start": "vinext start"
   },
   "dependencies": {
