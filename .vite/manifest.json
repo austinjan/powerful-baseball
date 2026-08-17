@@ -25,7 +25,7 @@
     ]
   },
   "app/scouting/ScoutTable.tsx": {
-    "file": "powerful-baseball/_next/static/chunks/ScoutTable-87pflDnf.js",
+    "file": "powerful-baseball/_next/static/chunks/ScoutTable-DbYZvp1c.js",
     "name": "ScoutTable",
     "src": "app/scouting/ScoutTable.tsx",
     "isDynamicEntry": true,
@@ -36,7 +36,7 @@
     ]
   },
   "app/special-abilities/AbilityExplorer.tsx": {
-    "file": "powerful-baseball/_next/static/chunks/AbilityExplorer-CRWZtRVI.js",
+    "file": "powerful-baseball/_next/static/chunks/AbilityExplorer-i3GF2G0o.js",
     "name": "AbilityExplorer",
     "src": "app/special-abilities/AbilityExplorer.tsx",
     "isDynamicEntry": true,
@@ -47,7 +47,7 @@
     ]
   },
   "node_modules/vinext/dist/shims/layout-segment-context.js": {
-    "file": "powerful-baseball/_next/static/chunks/layout-segment-context-cYjDCUY0.js",
+    "file": "powerful-baseball/_next/static/chunks/layout-segment-context-CYdd4HV8.js",
     "name": "layout-segment-context",
     "src": "node_modules/vinext/dist/shims/layout-segment-context.js",
     "isDynamicEntry": true,
@@ -58,7 +58,7 @@
     ]
   },
   "virtual:vinext-app-browser-entry": {
-    "file": "powerful-baseball/_next/static/chunks/index-BkhQHHWL.js",
+    "file": "powerful-baseball/_next/static/chunks/index-BF8pNhGd.js",
     "name": "index",
     "src": "virtual:vinext-app-browser-entry",
     "isEntry": true,
