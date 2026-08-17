@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import abilityData from "./abilities.json";
+import { abilityMatchesQuery } from "./abilityFilter";
 
 type Ability = {
   zh: string;
@@ -78,11 +79,9 @@ export default function AbilityExplorer() {
   const [rating, setRating] = useState<RatingFilter>("all");
 
   const results = useMemo(() => {
-    const needle = query.trim().toLocaleLowerCase("zh-Hant");
     return abilities.filter((ability) => {
-      const text = `${ability.zh} ${ability.ja} ${ability.effect} ${ability.reason}`.toLocaleLowerCase("zh-Hant");
       return (
-        (!needle || text.includes(needle)) &&
+        abilityMatchesQuery(ability, query) &&
         (kind === "all" || ability.kind === kind) &&
         (position === "all" || ability.position === position) &&
         (rating === "all" || ability.rating === rating)
