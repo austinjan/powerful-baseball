@@ -1,6 +1,6 @@
 {
   "../../../Users/austinjan/code/powerful-baseball/node_modules/vinext/dist/shims/layout-segment-context.js": {
-    "file": "powerful-baseball/_next/static/chunks/layout-segment-context-Dsk_i072.js",
+    "file": "powerful-baseball/_next/static/chunks/layout-segment-context-FwgQWhfC.js",
     "name": "layout-segment-context",
     "src": "../../../Users/austinjan/code/powerful-baseball/node_modules/vinext/dist/shims/layout-segment-context.js",
     "isDynamicEntry": true,
@@ -42,7 +42,7 @@
     ]
   },
   "virtual:vinext-app-browser-entry": {
-    "file": "powerful-baseball/_next/static/chunks/index-BBRu86Hx.js",
+    "file": "powerful-baseball/_next/static/chunks/index-noNgoprE.js",
     "name": "index",
     "src": "virtual:vinext-app-browser-entry",
     "isEntry": true,
