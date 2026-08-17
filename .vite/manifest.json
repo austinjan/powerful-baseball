@@ -1,0 +1,60 @@
+{
+  "../../../Users/austinjan/code/powerful-baseball/node_modules/vinext/dist/shims/layout-segment-context.js": {
+    "file": "powerful-baseball/_next/static/chunks/layout-segment-context-Dti0-1bY.js",
+    "name": "layout-segment-context",
+    "src": "../../../Users/austinjan/code/powerful-baseball/node_modules/vinext/dist/shims/layout-segment-context.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B3Xmhou7.js",
+      "virtual:vinext-app-browser-entry",
+      "_framework-B6IzBh2e.js"
+    ]
+  },
+  "_framework-B6IzBh2e.js": {
+    "file": "powerful-baseball/_next/static/chunks/framework-B6IzBh2e.js",
+    "name": "framework",
+    "imports": [
+      "_rolldown-runtime-B3Xmhou7.js"
+    ]
+  },
+  "_rolldown-runtime-B3Xmhou7.js": {
+    "file": "powerful-baseball/_next/static/chunks/rolldown-runtime-B3Xmhou7.js",
+    "name": "rolldown-runtime"
+  },
+  "app/scouting/ScoutTable.tsx": {
+    "file": "powerful-baseball/_next/static/chunks/ScoutTable-DW4NSski.js",
+    "name": "ScoutTable",
+    "src": "app/scouting/ScoutTable.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B3Xmhou7.js",
+      "_framework-B6IzBh2e.js"
+    ]
+  },
+  "app/special-abilities/AbilityExplorer.tsx": {
+    "file": "powerful-baseball/_next/static/chunks/AbilityExplorer-DRSQfGuM.js",
+    "name": "AbilityExplorer",
+    "src": "app/special-abilities/AbilityExplorer.tsx",
+    "isDynamicEntry": true,
+    "imports": [
+      "_rolldown-runtime-B3Xmhou7.js",
+      "_framework-B6IzBh2e.js"
+    ]
+  },
+  "virtual:vinext-app-browser-entry": {
+    "file": "powerful-baseball/_next/static/chunks/index-D-1KVYJV.js",
+    "name": "index",
+    "src": "virtual:vinext-app-browser-entry",
+    "isEntry": true,
+    "imports": [
+      "_rolldown-runtime-B3Xmhou7.js",
+      "_framework-B6IzBh2e.js"
+    ],
+    "dynamicImports": [
+      "app/special-abilities/AbilityExplorer.tsx",
+      "virtual:vinext-app-browser-entry",
+      "app/scouting/ScoutTable.tsx",
+      "../../../Users/austinjan/code/powerful-baseball/node_modules/vinext/dist/shims/layout-segment-context.js"
+    ]
+  }
+}
