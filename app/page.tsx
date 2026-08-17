@@ -6,6 +6,7 @@ export default function Home() {
   const scoutingHref = basePath ? `${basePath}/scouting.html` : "/scouting";
   const abilitiesHref = basePath ? `${basePath}/special-abilities.html` : "/special-abilities";
   const reincarnatedHref = basePath ? `${basePath}/reincarnated-players.html` : "/reincarnated-players";
+  const eventsHref = basePath ? `${basePath}/events.html` : "/events";
 
   return (
     <main>
@@ -29,7 +30,7 @@ export default function Home() {
             <p className="eyebrow">EXPLORE TOPICS</p>
             <h2 id="topics-title">主題探索</h2>
           </div>
-          <span className="topic-count">03 / 持續更新</span>
+          <span className="topic-count">04 / 持續更新</span>
         </div>
 
         <a className="topic-card" href={scoutingHref}>
@@ -61,6 +62,17 @@ export default function Home() {
             <h3>強力轉生選手</h3>
             <p>從姓名、地域與守備位置找出強力候選，搭配推薦度，快速決定下一趟轉生球探（転生スカウト）的目的地。</p>
             <span className="topic-cta">尋找選手 <span aria-hidden="true">↗</span></span>
+          </div>
+          <div className="baseball-seam" aria-hidden="true" />
+        </a>
+
+        <a className="topic-card events-topic-card" href={eventsHref}>
+          <div className="topic-number">04</div>
+          <div className="topic-content">
+            <div className="topic-tag" lang="ja">特殊イベント<span lang="zh-Hant">（特殊事件）</span></div>
+            <h3>年度日期</h3>
+            <p>必停日、隱藏特訓、合宿與指定格事件窗口，依月份快速確認下一個不能錯過的日期。</p>
+            <span className="topic-cta">開啟年度日曆 <span aria-hidden="true">↗</span></span>
           </div>
           <div className="baseball-seam" aria-hidden="true" />
         </a>
