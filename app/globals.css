@@ -201,7 +201,9 @@ footer { padding: 28px clamp(22px, 7vw, 112px); color: rgba(255,255,255,.64); ba
 .catalog-toolbar { margin-top: 44px; padding: 36px; background: rgba(255,253,248,.7); border: 1px solid var(--line); }
 .catalog-selects { display: grid; grid-template-columns: repeat(3, minmax(0, 220px)); gap: 18px; margin-top: 24px; }
 .catalog-selects label > span { display: block; margin-bottom: 10px; font: 700 10px ui-monospace, monospace; letter-spacing: .13em; }
-.catalog-selects select { width: 100%; min-height: 52px; padding: 0 38px 0 14px; color: var(--ink); background-color: #fffdf8; border: 1px solid var(--ink); border-radius: 0; font: inherit; font-size: 14px; -webkit-appearance: none; background-image: linear-gradient(45deg, transparent 50%, var(--ink) 50%), linear-gradient(135deg, var(--ink) 50%, transparent 50%); background-position: calc(100% - 18px) 22px, calc(100% - 12px) 22px; background-size: 6px 6px, 6px 6px; background-repeat: no-repeat; }
+.catalog-selects select, .catalog-selects input { width: 100%; min-height: 52px; padding: 0 14px; color: var(--ink); background-color: #fffdf8; border: 1px solid var(--ink); border-radius: 0; font: inherit; font-size: 14px; }
+.catalog-selects select { padding-right: 38px; -webkit-appearance: none; background-image: linear-gradient(45deg, transparent 50%, var(--ink) 50%), linear-gradient(135deg, var(--ink) 50%, transparent 50%); background-position: calc(100% - 18px) 22px, calc(100% - 12px) 22px; background-size: 6px 6px, 6px 6px; background-repeat: no-repeat; }
+.catalog-recommendation-note { margin: 18px 0 0; color: #697066; font-size: 11px; line-height: 1.65; }
 .catalog-results-line { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; padding: 34px 0 16px; }
 .catalog-results-line p { margin: 0; font: 700 12px ui-monospace, monospace; }
 .catalog-results-line p strong { color: var(--orange); font-size: 30px; }
@@ -210,6 +212,10 @@ footer { padding: 28px clamp(22px, 7vw, 112px); color: rgba(255,255,255,.64); ba
 .catalog-table { background: #fffdf8; }
 .catalog-table th { position: sticky; top: 0; z-index: 1; background: var(--paper); }
 .catalog-table td:nth-child(3) strong { color: var(--orange); font: 800 20px ui-monospace, monospace; }
+.catalog-recommendation { display: inline-flex; min-height: 25px; align-items: center; padding: 0 8px; color: var(--ink); background: #e8e5dd; font: 800 10px ui-monospace, monospace; }
+.catalog-recommendation-必拿 { color: #fff; background: #d54a2f; }
+.catalog-recommendation-強烈推薦 { background: var(--lime); }
+.catalog-recommendation-推薦 { color: #fff; background: #346cae; }
 .catalog-dlc { display: inline-flex; min-height: 25px; align-items: center; padding: 0 8px; color: #fff; background: #346cae; font: 800 10px ui-monospace, monospace; }
 .catalog-more { display: block; min-height: 48px; margin: 24px auto 0; padding: 0 22px; color: #fff; background: var(--ink); border: 0; font-size: 13px; font-weight: 800; cursor: pointer; }
 .catalog-explorer > .empty-state { margin: 20px 0 0; }
@@ -312,9 +318,10 @@ footer { padding: 28px clamp(22px, 7vw, 112px); color: rgba(255,255,255,.64); ba
   .catalog-table td:nth-child(1) { grid-column: 1; grid-row: 1; margin-top: 0; }
   .catalog-table td:nth-child(2) { grid-column: 1; grid-row: 2; margin-top: 5px; }
   .catalog-table td:nth-child(3) { grid-column: 2; grid-row: 1; margin: 0; padding: 0 0 0 14px; text-align: right; background: transparent; }
-  .catalog-table td:nth-child(4), .catalog-table td:nth-child(5) { grid-column: 1; }
-  .catalog-table td:nth-child(6) { grid-column: 2; grid-row: 2 / span 3; align-self: center; margin: 0; padding-left: 14px; text-align: right; }
-  .catalog-table td:nth-child(3)::before, .catalog-table td:nth-child(4)::before, .catalog-table td:nth-child(5)::before { display: block; }
+  .catalog-table td:nth-child(4) { grid-column: 2; grid-row: 2; margin: 5px 0 0; padding-left: 14px; text-align: right; }
+  .catalog-table td:nth-child(5), .catalog-table td:nth-child(6) { grid-column: 1; }
+  .catalog-table td:nth-child(7) { grid-column: 2; grid-row: 3 / span 3; align-self: center; margin: 0; padding-left: 14px; text-align: right; }
+  .catalog-table td:nth-child(3)::before, .catalog-table td:nth-child(5)::before, .catalog-table td:nth-child(6)::before { display: block; }
   .catalog-table td:nth-child(3)::before { text-align: right; }
   .international-explorer { padding: 70px 16px 76px; }
   .international-explorer .catalog-intro h2 { font-size: 36px; }

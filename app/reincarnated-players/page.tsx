@@ -54,7 +54,7 @@ export default function ReincarnatedPlayersPage() {
       <section className="sources reincarnated-sources" aria-labelledby="reincarnated-sources-title">
         <p className="eyebrow">SOURCES · 2026-08-17 核對</p>
         <h2 id="reincarnated-sources-title">資料與評價方式</h2>
-        <p>完整名錄與地區排行的姓名、年代、開局地域、主要守備位置、星數與 DLC 標記取自 Game8 2026–2027 搜尋工具；來源頁最後更新於 2026-07-06。地區排行會合併同地域內同一選手的一般版與 DLC 版，若兩個版本的開局地域不同則分別計入，並另列原始名錄紀錄數。</p>
+        <p>完整名錄與地區排行的姓名、年代、開局地域、主要守備位置、星數與 DLC 標記取自 Game8 2026–2027 搜尋工具；來源頁最後更新於 2026-07-06。推薦指數（おすすめ度）是本站依星數換算的編輯分級，不是 KONAMI 或 Game8 官方評價。地區排行會合併同地域內同一選手的一般版與 DLC 版，若兩個版本的開局地域不同則分別計入，並另列原始名錄紀錄數。</p>
         <div className="source-links">
           <a href="https://game8.jp/eikan-nine/553745" target="_blank" rel="noreferrer">Game8：転生OB完整搜尋工具 ↗</a>
           <a href="https://game8.jp/eikan-nine/553748" target="_blank" rel="noreferrer">Game8：投手の転生OB一覧 ↗</a>
