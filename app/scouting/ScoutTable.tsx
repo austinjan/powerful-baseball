@@ -6,20 +6,28 @@ import { categoryLabels, importanceLabels, scoutNotes, type Category } from "./d
 type SortKey = "importance" | "japanese";
 
 export function ScoutTable() {
+  const [query, setQuery] = useState("");
   const [category, setCategory] = useState<"全部" | Category>("全部");
   const [sortKey, setSortKey] = useState<SortKey>("importance");
   const [ascending, setAscending] = useState(false);
 
   const rows = useMemo(() => {
+    const needle = query.trim().toLocaleLowerCase("zh-Hant");
     return scoutNotes
-      .filter((note) => category === "全部" || note.categories.includes(category))
+      .filter((note) => {
+        const searchableText = `${note.japanese} ${note.chinese} ${note.ability}`.toLocaleLowerCase("zh-Hant");
+        return (
+          (!needle || searchableText.includes(needle)) &&
+          (category === "全部" || note.categories.includes(category))
+        );
+      })
       .sort((a, b) => {
         const result = sortKey === "japanese"
           ? a.japanese.localeCompare(b.japanese, "ja")
           : a.importance - b.importance || a.japanese.localeCompare(b.japanese, "ja");
         return ascending ? result : -result;
       });
-  }, [category, sortKey, ascending]);
+  }, [query, category, sortKey, ascending]);
 
   function sortBy(key: SortKey) {
     if (sortKey === key) setAscending((value) => !value);
@@ -47,6 +55,16 @@ export function ScoutTable() {
         </div>
         <div className="result-count" aria-live="polite"><strong>{rows.length}</strong> 筆結果</div>
       </div>
+
+      <label className="scout-search">
+        <span>搜尋日文、中文或代表能力</span>
+        <input
+          type="search"
+          value={query}
+          placeholder="例：好リード、引導配球、キャッチャー…"
+          onChange={(event) => setQuery(event.target.value)}
+        />
+      </label>
 
       <div className="filter-bar" aria-label="依分類篩選">
         {(["全部", ...Object.keys(categoryLabels)] as const).map((item) => (
